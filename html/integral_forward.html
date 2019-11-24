@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>平台积分提现</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/integral_forward.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>平台积分提现</h1>
+			<a class="back" onclick="back()"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 通用表单 -->
+		<!-- 通用表单 -->
+		<div class="pubform">
+			<form>
+				<!--<div class="ftitle"><a style="color: #A9A9A9;" id="current_general_integral">当前可用188000个通用积分</a></div>-->
+				<div class="fgroup">
+					
+					<label class="fitem">
+						<span class="fname">兑换比例</span>
+						<p class="finfo">平台积分:金额&nbsp;<span id="withdraw_proportion">0</span>:1</p>
+					</label>
+					
+					<label class="fitem">
+						<span class="fname">开放时间</span>
+						<p class="finfo" id="withdraw_time">每月1日 至 31 日</p>
+					</label>
+					
+					<label class="fitem">
+						<span class="fname">最低兑换</span>
+						<p class="finfo">最低兑换<span id="min_number_tj">0</span>个</p>
+					</label>
+			
+					
+					
+					<label class="fitem">
+						<span class="fname">提现积分</span>
+						<input class="ftext" id="withdraw_number" type="number" placeholder="请填写提现积分个数">
+					</label>
+					<label class="fitem">
+						<span class="fname">金额</span>
+						<p class="finfo">可兑换<span id="count_amount">0</span>个通用积分</p>
+					</label>
+					<label class="fitem">
+						<span class="fname">到账金额</span>
+						<p class="finfo">到账<span id="receipts_amount">0</span>个通用积分</p>
+					</label>
+				</div>
+				<div class="fhandle">
+					<a class="fsubmit" id="fsubmit" onclick="submitWithdraw()">提现</a>
+				</div>
+			</form>
+		</div>
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../plus/js/city-picker.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#withdraw_number').bind('input propertychange', function() {
+					inputChange($(this).val());
+				});
+
+			})
+		</script>
+	</body>
+</html>

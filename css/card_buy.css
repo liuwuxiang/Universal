@@ -1,0 +1,27 @@
+.to_open{
+	background-color: #0b8ffe;
+	border-radius: 5px;
+	text-align: center;
+	padding: .08rem .1rem;
+	color: white;
+	font-weight: 100;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: .48rem;
+	line-height: .48rem;
+	margin: .1rem 0;
+}
+
+.direction_card{
+	display: inline-block;
+	margin: 0 .2rem;
+	margin-top: 20px;
+	padding: .1rem .2rem;
+	color: #0B8FFE;
+	font-size: .32rem;
+	text-decoration: underline;
+	text-align: center;
+	float: right;
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的团队</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/my_team.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body style="background: white;">
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>我的团队</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		  
+		  <!-- 团队 -->
+		  <div class="teamhead"  style="margin-top: 5px;margin-bottom: 5px;">
+		    <img src="../images/img_head.jpg" id="header_img" alt="" class="img">
+		    <span class="name boy" id="nick_name"><!--业主名称/昵称--></span><!-- 女生替换class boy为girl  -->
+		    <p class="desc" id="level_name"><!--铂金会员--></p>
+		    <a href="javascript:;" class="ewm" id="ewm"></a>
+		  </div>
+		
+		  <!-- 二维码弹出 -->
+		  <div class="ewmshow" id="ewmshow">
+		    <div class="wrap">
+		      <img src="../images/img_head.jpg" id="qrcode_header_img" alt="" class="img">
+		      <span class="name boy" id="qrcode_nick_name"><!--业主名称/昵称--></span><!-- 女生替换class boy为girl  -->
+		      <p class="tel" id="qrcode_mobile"><!--18787015223--></p>
+		      <img src="../images/ewm.png" id="qrcode_photo_url" alt="" class="ewm">
+		      <span class="desc">扫一扫二维码加入我们</span><br/>
+		      <!--<span class="desc">长按二维码分享</span>-->
+		    </div>
+		    <!--<button style="width: 100px;height: 35px;margin-top: 10px;background: #2993F8;color:white;border:0;border-radius: 8px;">分享</button>-->
+		    <a href="javascript:;" class="close"></a>
+		  </div>
+		
+		  <!-- 团队列表 -->
+		  <p class="pubtitle">我的团队</p>
+		  <ul class="teamlist" id="teamlist">
+		  	<!--<li>
+			    <div class="item">
+			      <div class="left">
+			        <img src="../images/img_head.jpg" alt="" class="img">
+			        <span class="name">飞翔的阿里</span>
+			        <p class="lev">三星级铂金会员</p>
+			      </div>
+			      <div class="right">
+			        <p class="tel">18787015223</p>
+			        <p class="time">2018-05-21 10:59:32</p>
+			      </div>
+			    </div>
+		    </li>-->
+		  </ul>
+		
+		  <!-- 团队为空 -->
+		  <div class="publicnull" id="publicnull_tip">
+		    <span class="icon team"></span>
+		    <p class="text">您还没有团队</p>
+		  </div>
+		  
+		  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">    
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

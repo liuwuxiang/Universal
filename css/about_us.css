@@ -1,0 +1,23 @@
+html,body{
+	background: white;
+}
+
+/*内容*/
+.content{
+	background-color: #fff;
+	padding-bottom: 0.5rem;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+/*商品详情*/
+.desc-main {
+	padding-left: 1%;
+	margin-right: 1%;
+	padding-top: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    margin-bottom: 10px;
+}

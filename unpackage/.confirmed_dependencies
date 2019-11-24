@@ -1,0 +1,517 @@
+{
+  "index.html": {
+    "refer": [
+      "html/tab_bar.html",
+      "html/register.html",
+      "html/retrieve_password.html",
+      "html/my.html",
+      "html/card_bag.html",
+      "html/test.html",
+      "html/integral_mall.html",
+      "html/nearby.html",
+      "html/home.html",
+      "html/webview.html"
+    ],
+    "resources": [
+      "js/common.js",
+      "css/common.css",
+      "js/jquery-1.9.1.min.js",
+      "js/mui.js",
+      "js/page_jump.js",
+      "js/common-mui.js",
+      "js/index.js"
+    ]
+  },
+  "html/card_bag.html": {
+    "refer": [
+      "html/test.html",
+      "html/register.html",
+      "html/retrieve_password.html",
+      "html/my.html",
+      "html/integral_mall.html",
+      "html/tab_bar.html",
+      "html/nearby.html",
+      "html/home.html",
+      "html/webview.html",
+      "html/my_integral.html",
+      "html/consumption_integral.html",
+      "html/open_member_card.html",
+      "html/general_integral.html",
+      "html/business_detail.html",
+      "html/my_rose.html",
+      "html/gym_card_details.html"
+    ],
+    "resources": []
+  },
+  "html/tab_bar.html": {
+    "resources": [
+      "html/card_bag.html",
+      "html/home.html",
+      "html/my.html"
+    ],
+    "refer": [
+      "html/my.html",
+      "html/card_bag.html",
+      "html/integral_mall.html",
+      "html/nearby.html",
+      "html/home.html",
+      "html/retrieve_password.html",
+      "html/test.html",
+      "html/webview.html",
+      "html/shopping_cart.html",
+      "index.html",
+      "html/my_orders.html"
+    ]
+  },
+  "html/my.html": {
+    "refer": [
+      "html/register.html",
+      "html/retrieve_password.html",
+      "html/tab_bar.html",
+      "html/nearby.html",
+      "html/home.html",
+      "html/card_bag.html",
+      "html/test.html",
+      "html/integral_mall.html",
+      "html/webview.html",
+      "html/integral_orders.html",
+      "html/my_orders.html",
+      "html/security_center.html",
+      "html/my_integral.html",
+      "html/consumption_integral.html",
+      "html/general_integral.html",
+      "html/about_us.html",
+      "html/my_information.html",
+      "index.html",
+      "html/my_team.html",
+      "html/message_center.html",
+      "html/system_setting.html",
+      "html/business_register.html",
+      "html/problem.html",
+      "html/my_collection.html",
+      "html/my_coupons.html",
+      "html/my_rose.html",
+      "html/my_integral_two.html"
+    ],
+    "resources": []
+  },
+  "html/nearby.html": {
+    "refer": [
+      "html/register.html",
+      "html/my.html",
+      "html/card_bag.html",
+      "html/test.html",
+      "html/integral_mall.html",
+      "html/tab_bar.html",
+      "html/home.html",
+      "html/retrieve_password.html",
+      "html/webview.html",
+      "html/business_detail.html",
+      "html/location_choose.html",
+      "html/search.html",
+      "html/advertisement_chart.html",
+      "html/open_business_member_card.html",
+      "html/search_two.html",
+      "html/barcode.html",
+      "html/message_center.html",
+      "html/external_links.html",
+      "index.html"
+    ],
+    "resources": []
+  },
+  "html/home.html": {
+    "refer": [
+      "html/register.html",
+      "html/retrieve_password.html",
+      "html/my.html",
+      "html/card_bag.html",
+      "html/test.html",
+      "html/integral_mall.html",
+      "html/tab_bar.html",
+      "html/nearby.html",
+      "html/webview.html",
+      "html/business_list.html",
+      "html/business_detail.html",
+      "html/tag_business_list.html",
+      "html/message_center.html",
+      "index.html",
+      "html/search.html",
+      "html/location_choose.html",
+      "html/barcode.html",
+      "html/external_links.html",
+      "html/advertisement_chart.html",
+      "html/open_member_card.html",
+      "html/tag_recommend_business.html",
+      "html/search_two.html",
+      "html/business_detail_hotel.html"
+    ],
+    "resources": []
+  },
+  "html/integral_mall.html": {
+    "refer": [
+      "html/my.html",
+      "html/card_bag.html",
+      "html/test.html",
+      "html/tab_bar.html",
+      "html/nearby.html",
+      "html/home.html",
+      "html/retrieve_password.html",
+      "html/webview.html",
+      "html/integral_goods_detail.html",
+      "html/integral_goods.html",
+      "html/message_center.html",
+      "html/location_choose.html",
+      "html/search.html",
+      "html/external_links.html",
+      "html/business_integral_mall.html",
+      "html/advertisement_chart.html",
+      "html/integral_mall_all_business.html",
+      "html/my_integral_two.html",
+      "html/integral_orders.html",
+      "html/business_integral_goods_detail.html",
+      "html/integral_help.html",
+      "index.html"
+    ],
+    "resources": []
+  },
+  "html/shopping_cart.html": {
+    "refer": [
+      "html/webview.html"
+    ],
+    "resources": []
+  },
+  "html/integral_orders.html": {
+    "refer": [
+      "html/integral_order_detail.html",
+      "html/webview.html",
+      "html/business_integral_mall_orders_detail.html"
+    ],
+    "resources": []
+  },
+  "html/my_orders.html": {
+    "refer": [
+      "html/my_oder_detail.html",
+      "html/webview.html",
+      "index.html",
+      "html/my_order_detail_two.html",
+      "html/order_detail_hotel.html"
+    ],
+    "resources": []
+  },
+  "html/security_center.html": {
+    "refer": [
+      "html/webview.html",
+      "html/set_login_pwd.html",
+      "html/set_pay_pwd.html",
+      "html/security_question.html"
+    ],
+    "resources": []
+  },
+  "html/consumption_integral.html": {
+    "refer": [
+      "html/webview.html",
+      "html/integral_exchange.html",
+      "html/integral_recharge.html"
+    ],
+    "resources": []
+  },
+  "html/general_integral.html": {
+    "refer": [
+      "html/webview.html",
+      "html/integral_exchange.html",
+      "html/general_integral_forward.html",
+      "html/integral_recharge.html"
+    ],
+    "resources": []
+  },
+  "html/my_information.html": {
+    "refer": [
+      "html/webview.html",
+      "html/set_nickname.html",
+      "html/set_sex.html",
+      "html/real_name_authentication.html",
+      "html/receiving_address_manager.html",
+      "html/set_mobile.html",
+      "html/set_email.html",
+      "html/card_authentication.html",
+      "html/owner_authentication.html"
+    ],
+    "resources": []
+  },
+  "html/integral_recharge.html": {
+    "refer": [
+      "html/webview.html"
+    ],
+    "resources": []
+  },
+  "html/integral_exchange.html": {
+    "refer": [
+      "html/webview.html"
+    ],
+    "resources": []
+  },
+  "html/general_integral_forward.html": {
+    "refer": [
+      "html/webview.html"
+    ],
+    "resources": []
+  },
+  "html/business_list.html": {
+    "refer": [
+      "html/webview.html",
+      "html/business_detail.html",
+      "html/search.html",
+      "html/open_business_member_card.html",
+      "html/open_member_card.html"
+    ],
+    "resources": []
+  },
+  "html/business_detail.html": {
+    "refer": [
+      "html/webview.html",
+      "html/goods_buy.html",
+      "index.html",
+      "html/goods_buy_two.html"
+    ],
+    "resources": []
+  },
+  "html/goods_buy.html": {
+    "refer": [
+      "html/webview.html",
+      "html/open_member_card.html",
+      "index.html"
+    ],
+    "resources": []
+  },
+  "html/tag_business_list.html": {
+    "refer": [
+      "html/business_detail.html",
+      "html/open_business_member_card.html"
+    ],
+    "resources": []
+  },
+  "html/open_member_card.html": {
+    "refer": [
+      "html/webview.html",
+      "html/user_agreement.html"
+    ],
+    "resources": []
+  },
+  "html/integral_goods_detail.html": {
+    "refer": [
+      "html/webview.html",
+      "html/integral_order_confirm.html"
+    ],
+    "resources": []
+  },
+  "html/integral_goods.html": {
+    "refer": [
+      "html/webview.html",
+      "html/integral_goods_detail.html",
+      "index.html"
+    ],
+    "resources": []
+  },
+  "html/set_nickname.html": {
+    "refer": [
+      "html/webview.html"
+    ],
+    "resources": []
+  },
+  "html/message_center.html": {
+    "refer": [
+      "html/webview.html",
+      "html/business_detail.html",
+      "html/message_detail.html",
+      "index.html"
+    ],
+    "resources": []
+  },
+  "html/system_setting.html": {
+    "refer": [
+      "html/about_us.html",
+      "index.html",
+      "html/suggestion_feedback.html"
+    ],
+    "resources": []
+  },
+  "html/real_name_authentication.html": {
+    "refer": [
+      "html/id_card_authentication.html",
+      "html/user_bank_card_setting.html"
+    ],
+    "resources": []
+  },
+  "html/search.html": {
+    "refer": [
+      "html/business_detail.html"
+    ],
+    "resources": []
+  },
+  "html/my_integral.html": {
+    "refer": [
+      "html/integral_forward.html",
+      "html/wnk_business_integral_list.html",
+      "html/wnk_send_integral_list.html"
+    ],
+    "resources": []
+  },
+  "html/problem.html": {
+    "refer": [
+      "html/problem_show.html"
+    ],
+    "resources": []
+  },
+  "html/my_collection.html": {
+    "refer": [
+      "html/business_detail.html"
+    ],
+    "resources": []
+  },
+  "html/wnk_business_integral_list.html": {
+    "refer": [
+      "html/business_detail.html",
+      "html/business_integral_store.html",
+      "html/business_integral_detail.html"
+    ],
+    "resources": []
+  },
+  "html/my_rose.html": {
+    "refer": [
+      "html/rose_exchange.html"
+    ],
+    "resources": []
+  },
+  "html/business_integral_mall.html": {
+    "refer": [
+      "html/business_integral_goods_detail.html",
+      "html/business_integral_mall_type_goods.html",
+      "html/business_integral_mall_orders.html",
+      "html/business_integral_detail.html",
+      "html/integral_goods_detail.html"
+    ],
+    "resources": []
+  },
+  "html/business_integral_goods_detail.html": {
+    "refer": [
+      "index.html",
+      "html/business_integral_goods_buy.html",
+      "html/business_integral_store.html"
+    ],
+    "resources": []
+  },
+  "html/business_integral_store.html": {
+    "refer": [
+      "html/business_integral_goods_detail.html",
+      "html/business_integral_mall_orders.html"
+    ],
+    "resources": []
+  },
+  "html/business_integral_mall_type_goods.html": {
+    "refer": [
+      "html/business_integral_goods_detail.html"
+    ],
+    "resources": []
+  },
+  "html/business_integral_mall_orders.html": {
+    "refer": [
+      "html/business_integral_mall_orders_detail.html"
+    ],
+    "resources": []
+  },
+  "html/my_oder_detail.html": {
+    "refer": [
+      "html/my_order_pay.html"
+    ],
+    "resources": []
+  },
+  "html/wnk_send_integral_list.html": {
+    "refer": [
+      "html/business_integral_detail.html",
+      "html/business_detail.html",
+      "html/wnk_send_integral_detail.html"
+    ],
+    "resources": []
+  },
+  "html/my_coupons.html": {
+    "refer": [
+      "html/business_list.html"
+    ],
+    "resources": []
+  },
+  "html/tag_recommend_business.html": {
+    "refer": [
+      "html/tag_business_list.html",
+      "html/business_detail.html",
+      "html/business_detail_hotel.html"
+    ],
+    "resources": []
+  },
+  "html/register.html": {
+    "refer": [
+      "html/user_agreement.html"
+    ],
+    "resources": []
+  },
+  "html/my_integral_two.html": {
+    "refer": [
+      "index.html",
+      "html/business_detail.html",
+      "html/wnk_send_integral_detail.html",
+      "html/business_integral_detail.html",
+      "html/business_integral_store.html",
+      "html/integral_forward.html",
+      "html/business_integral_mall.html",
+      "html/integral_mall.html",
+      "html/integral_help.html"
+    ],
+    "resources": []
+  },
+  "html/about_us.html": {
+    "refer": [
+      "html/about_us_detail.html"
+    ],
+    "resources": []
+  },
+  "html/search_two.html": {
+    "refer": [
+      "html/business_detail.html",
+      "html/search_result.html"
+    ],
+    "resources": []
+  },
+  "html/integral_mall_all_business.html": {
+    "refer": [
+      "html/business_integral_goods_detail.html",
+      "html/business_integral_mall.html"
+    ],
+    "resources": []
+  },
+  "html/my_order_detail_two.html": {
+    "refer": [
+      "html/order_refund.html",
+      "html/refund_record.html",
+      "html/order_make_record.html"
+    ]
+  },
+  "html/gym_card_details.html": {
+    "refer": [
+      "html/open_business_member_card.html"
+    ]
+  },
+  "html/business_detail_hotel.html": {
+    "refer": [
+      "html/business_goods_detail_hotel.html"
+    ]
+  },
+  "html/business_goods_detail_hotel.html": {
+    "refer": [
+      "html/goods_buy_two_hotel.html"
+    ]
+  },
+  "html/goods_buy_two.html": {
+    "refer": [
+      "html/my_order_detail_two.html"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+  		<script src="../js/weui/jquery-2.1.4.js"></script>
+  		<script src="../js/weui/fastclick.js"></script>
+  		<script src="../js/weui/jquery-weui.js"></script>
+  		<script src="../js/weui/swiper.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/join_login_page.js"></script>
+  		<script src="../js/business_integral_store.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+  		<link href="../css/business_integral_store.css" rel="stylesheet" type="text/css" />
+  		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		  <script src="../js/hui.js"></script>
+		
+  		<style type="text/css">body,html{min-height:100%; }</style>
+	</head>
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>积分店铺</h1>
+			<a class="back" onclick="back()"></a>
+			<a class="submit">订单</a>
+			<!--<a id="user_collection" class="shouchang" onclick="collectionOrCancelBusiness()"></a> <!-- sel表示有消息  -->
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+		
+		<!--轮播图STR-->
+		<div class="swiper-container"  style="height: 200px;">
+	      <!-- Additional required wrapper -->
+	      <div class="swiper-wrapper" id="swiper-wrapper">
+	        <!-- Slides -->
+	        <!--<div class="swiper-slide"><img src="../images/banner.jpg" /></div>
+	        <div class="swiper-slide"><img src="../images/banner.jpg" /></div>
+	        <div class="swiper-slide"><img src="../images/banner.jpg" /></div>-->
+	      </div>
+	      <!-- If we need pagination -->
+	      <div class="swiper-pagination"></div>
+	    </div>
+	    <!--轮播图END-->
+	    
+	    <!-- 商家信息div -->
+	    <div class="business_information_div">
+	    		<div class="business_information_one">
+	    			<a class="business_name" id="business_name">漂亮百分百(万达店)</a>
+	    			<div class="xx_div">
+		  			<img src="../images/xingji.png"/>
+				    <img src="../images/xingji.png"/>
+				    <img src="../images/xingji.png"/>
+				    <img src="../images/xingji.png"/>
+				    <img src="../images/xingji.png"/>
+				    <a>5.0分</a>
+		  		</div>
+	    		</div>
+	    		<div class="address_div">
+	    			<div class="left_address_div">
+	    				<img src="../images/icon/location_icon.png"/>
+	    				<a id="address">云南省昆明市西山区文化空间D栋1901</a>
+	    			</div>
+	    			<div class="right_mobile_div" onclick="callMobile()">
+	    				<img src="../images/icon/mobile_icon.png"/>
+	    			</div>
+	    		</div>
+	    </div>
+	    
+	    <!-- 商品信息 -->
+	    <div class="commodity_information_div">
+	    		<div class="prices_div">
+	    			<a class="tuan_tag">积</a>
+	    			<a class="prices_tag">积分商品</a>
+	    		</div>
+	    		<div class="business_type_div">
+	    			<ul class="business_type_ul" id="business_type_ul">
+			  		<!--<li class="li_type sel" id="1" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类1</a>
+			  		</li>
+			  		<li class="li_type" id="2" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类2</a>
+			  		</li>
+			  		<li class="li_type" id="3" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类3</a>
+			  		</li>-->
+			  	</ul>
+	    		</div>
+	    		<ul class="goods_ul" id="goods_ul">
+				<!--<li onclick="goodsDetail(0)">
+					<div class="li_left_div">
+						<img src="../images/img_goods.jpg" onerror="this.src='../images/logo.jpg'"/>
+					</div>
+					<div class="li_right_div">
+						<a class="goods_name">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称111</a>
+						<a class="goods_guige">商品规格商品规格商品规格商品规格商品规格商品规格商品规格</a>
+						<a class="goods_price"><span>0</span>积分</a>
+					</div>
+				</li>-->
+			</ul>
+	    </div>
+	    
+	    <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+	    <script src="../js/toast.js"></script>
+	    <script src="../js/navigator.js"></script>
+	    <script src="../js/navigator.js"></script>
+	    <script src="../js/api.js"></script>
+
+	</body>
+</html>

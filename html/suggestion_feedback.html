@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>投诉建议</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script> 
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/suggestion_feedback.js"></script>
+		<script src="../js/ajaxfileupload.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body style="background: white;">
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>投诉建议</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		
+		<!-- 通用表单 -->
+  <div class="pubform">
+    <form>
+      <div class="ftitle">您的建议反馈是我们前进的动力</div>
+      <div class="fgroup">
+        <label class="fitem full">
+          <textarea class="ftextarea" id="ftextarea" placeholder="请填写您的建议反馈"></textarea>
+        </label>
+        <!-- 图片上传 -->
+        <div class="fuploadimg" id="fuploadimg">
+
+          <!--<p class="loadimgitem"><img src="/property_system/images/wx/img_head.jpg" alt=""><span class="delte"></span></p>-->
+          <!-- 上传按钮，点击打开选择从相册或者拍照 -->
+          <label class="floadimgbut" id="floadimgbut" onclick="imgChoose()"></label>
+          <input type="file" accept="image/*" style="display: none;" name="ajaxFile" id="header_file" onchange="chooseHeaderChangeFile()"/>
+        </div>
+      </div>
+      <div class="fhandle">
+        <a class="fsubmit">反馈</a>
+      </div>
+
+    </form>
+  </div>
+		
+		<!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">   
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

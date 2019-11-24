@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>玫瑰兑换</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/rose_exchange.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+
+	<body style="background: white;">
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>玫瑰兑换</h1>
+			<a class="back" onclick="back()"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 通用表单 -->
+		<div class="pubform">
+			<form>
+				<div class="fgroup">
+					<label class="fitem">
+		          	<span class="fname">开放时间</span>
+		          	<p class="finfo"><span id="exchange_time"></span></p>
+		        </label>
+					<label class="fitem">
+		          <span class="fname">兑换比例</span>
+		          <p class="finfo">玫瑰:通用积分 = <span id="exchange_ratio">1:1</span></p>
+		        </label>
+					<label class="fitem">
+		          <span class="fname">兑换要求</span>
+		          <p class="finfo">一次最少兑换 <span id="exchange_min">1</span> 个玫瑰</p>
+		        </label>
+					<label class="fitem">
+		          <span class="fname">兑换个数</span>
+		          <input class="ftext" id="rose_number" type="number" placeholder="请填写玫瑰兑换个数">
+		        </label>
+					<label class="fitem">
+		          <span class="fname">通用积分</span>
+		          <p class="finfo">可兑换<span id="count_amount">0</span>个通用积分</p>
+		        </label>
+					<label class="fitem">
+		          <span class="fname">到账个数</span>
+		          <p class="finfo">到账<span id="receipts_amount">0</span>个通用积分</p>
+		        </label>
+				</div>
+				<div class="fhandle">
+					<a class="fsubmit" id="fsubmit">兑换</a>
+				</div>
+			</form>
+		</div>
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#rose_number').bind('input propertychange', function() {
+					inputChange($(this).val());
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

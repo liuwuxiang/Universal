@@ -1,0 +1,22 @@
+html,body{
+	background: white;
+	padding: 0;
+	margin: 0;
+}
+
+.refresh_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.weui-pull-to-refresh__layer{
+	z-index: 0;
+}
+
+.header_arrow_more{
+	/*background: red;*/
+	position: absolute;
+	right: 10px;
+	top: 35px;
+}

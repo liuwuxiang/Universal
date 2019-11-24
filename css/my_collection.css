@@ -1,0 +1,128 @@
+html,body{
+	background: white;
+}
+
+.goods_ul{
+	width: 98%;
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	margin-left: 1%;
+	margin-top: 5px;
+	margin-bottom: 50px;
+}
+
+.goods_ul li{
+	width: 100%;
+	height: 100px;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	margin-bottom: 10px;
+	background: #F5F5F5;
+}
+
+.weui-cell_swiped{
+	height: 100px !important;
+}
+
+.weui-cell__bd{
+	height: 100px !important;
+	background: #F5F5F5 !important;
+}
+
+.delete-swipeout{
+	line-height: 80px !important;
+}
+
+.li_left_div{
+	width: 30%;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+}
+
+.li_left_div img{
+	width: auto;
+	height: 90%;
+	margin-top: 4%;
+}
+
+.li_right_div{
+	width: 67%;
+	height: 100%;
+	float: left;
+	margin-left: 2%;
+}
+
+.goods_name{
+	display: block;
+	width: 100%;
+	height: 15px;
+	text-align: left;
+	color: black;
+	font-size: 15px;
+	line-height: 15px;
+	text-overflow: -o-ellipsis-lastline;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 1;
+  	line-clamp: 1;
+  	-webkit-box-orient: vertical;
+}
+
+.goods_price span{
+	font-size: 20px;
+}
+
+.content_left_div{
+	width: 80%;
+	height: 90px;
+	margin-top: 5px;
+	float: left;
+}
+
+.juli_tag{
+	display: block;
+	width: 20%;
+	float: left;
+	height: 90px;
+	line-height: 20px;
+	margin-top: 5px;
+	text-align: right;
+	font-size: 13px;
+	color: #FF8C00;
+}
+
+.xx_div{
+	width: 100%;
+	height: 20px;
+	margin-top: 12.5px;
+	text-align: left;
+}
+
+.xx_div img{
+	width: 20px;
+	height: 20px;
+}
+
+.address{
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 15px;
+	text-align: left;
+	margin-top: 12.5px;
+	font-size: 13px;
+	color: #808080;
+	text-overflow: -o-ellipsis-lastline;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 2;
+  	line-clamp: 2;
+  	-webkit-box-orient: vertical;
+}

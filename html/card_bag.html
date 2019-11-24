@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>会员卡</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/card_bag.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+
+		<link href="../css/card_bag.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link href="../css/gym_card.css" rel="stylesheet" type="text/css" />
+
+		<script src="../js/hui.js"></script>
+		<script src="../js/gym_card.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!-- 导航条STR -->
+		<div class="head">
+			<h1>会员卡</h1>
+			<a class="back" onclick="back()"></a>
+			<!--<a href="" class="set"></a>-->
+		</div>
+		<div class="h88"></div>
+		<!-- 导航条END -->
+
+		<!-- 顶部视图STR -->
+		<div class="my_member_card_div">
+			<img src="../images/yinka_background.png" class="top_background_img" id="top_background_img" />
+			<a class="card_number_tag" id="card_number_tag">
+				<!--NO.-->
+			</a>
+			<div class="xx_div" id="xx_div">
+				<!--<img src="../images/yinka_xx.png"/>
+			    <img src="../images/yinka_xx.png"/>
+			    <img src="../images/yinka_xx.png"/>-->
+			</div>
+			<a class="term_validity_tag" id="term_validity_tag">
+				<!--有效期至：-->
+			</a>
+			<input type="button" value="立即开卡" class="open_card_button_yinka" />
+			<!--<input type="button" value="万能金卡" class="open_card_button_jinka"/>-->
+		</div>
+
+		<!-- 积分STR -->
+		<div class="menjfwrap" style="margin-top: 10px;">
+			<div class="wrap" style="background: #F5F5F5;">
+				<a id="my_integral_tag" class="words" onclick="clicked(this.id)"><b id="my_integral_balance">0</b>我的积分</a>
+				<a id="general_balance_tag_tag" class="words" onclick="clicked(this.id)"><b id="general_balance_tag">0</b>通用积分</a>
+				<a id="my_rose_balance_tag" class="words" onclick="clicked(this.id)"><b id="my_rose_balance">0</b>我的玫瑰</a>
+			</div>
+		</div>
+
+		<!--健身卡-->
+		<ul class="gym_card_ul" id="gym_card_ul">
+			<!-- <li class="gym_card_ul_li">
+				<div class="gym_card_ul_li_div">
+					<img src="../images/gymCardBusinessHead.png" />
+					<div class="gym_card_info">
+						<p class="gym_card_business_name" id="gym_card_business_name">施蒂利克健身会所</p>
+						<div class="gym_card_remaining_days">
+							剩余：
+							<span id="gym_card_remaining_days">123</span> 天
+						</div>
+					</div>
+					<div class="gym_card_distance_div">
+						<img src="../images/gymCardStrongLightBlue.png" />
+						<span class="gyn_card_distance">50m</span>
+					</div>
+				</div>
+			</li> -->
+		</ul>
+
+		<!-- 商家分类STR -->
+		<!--<div class="business_type_div">
+			  	<ul class="business_type_ul" id="business_type_ul">
+			  		<li class="li_type sel" id="1" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类1</a>
+			  			<div></div>
+			  		</li>
+			  	</ul>
+		  </div>-->
+		<!-- 商家分类END -->
+
+		<!-- 商家列表STR -->
+		<!--<div class="business_div">
+		  		<ul id="business_ul">
+		  			<li id="business_detail.html" onclick="clicked(this.id)">
+		  				<div class="business_left_div">
+		  					<img src="../images/banner.jpg"/>
+		  				</div>
+		  				<div class="business_right_div">
+		  					<a>春禾寿司(西菀店)</a>
+	  						<a>Lorem ipsum dolor sit amet, consectetur</a>
+	  						<a>1200km</a>
+	  						<input type="button" value="立即使用"/>
+		  				</div>
+		  			</li>
+		  		</ul>
+		  </div>-->
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的</title>
+		<link href="../css/my.css" rel="stylesheet" type="text/css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+
+		<!--<link href="../css/weui/weui.css" rel="stylesheet" type="text/css" />-->
+		<!--<link href="../css/weui/jquery-weui.min.css" rel="stylesheet" type="text/css" />-->
+
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/join_login_page.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+
+	</head>
+
+	<body class="bgw">
+		<div id="slider" class="mui-slider mui-fullscreen" style="height: 0;"></div>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>会员中心</h1>
+			<a id="message_center" class="message_center"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 会员头部STR -->
+		<div class="memhead" id="my_information">
+			<a class="img"><img src="../images/img_head.jpg" alt="" id="header_img"></a>
+			<span class="name boy" id="nick_name_tag"></span>
+			<!-- 女生替换class boy为girl  -->
+			<p class="tj" id="recommend_name">
+				<!--推荐人：-->
+			</p>
+			<a class="vipbut vip2" id="member_level_name">普通会员</a>
+			<!-- 普通会员 vip1  铂金会员 vip2 -->
+			<img src="../images/icon_more.svg" class="header_arrow_more" />
+		</div>
+		<!-- 会员头部END -->
+
+		<!-- 积分STR -->
+		<div class="menjfwrap">
+			<div class="wrap">
+				<a class="words" id="my_integral"><b id="my_integral_balance">0</b>我的积分</a>
+				<!--<a id="consumption_integral" class="words"><b id="consumption_balance_tag">0</b>消费积分</a>-->
+				<a id="general_integral" class="words"><b id="general_balance_tag">0</b>通用积分</a>
+				<a id="my_rose_balance_tag" class="words"><b id="my_rose_balance">0</b>我的玫瑰</a>
+			</div>
+		</div>
+		<!-- 积分END -->
+
+		<!-- 入口STR -->
+		<div class="memmenu">
+			<!--<a class="item my_rose" id="my_rose">我的玫瑰<span id="my_rose_balance">0朵玫瑰</span></a>-->
+			<a class="item coupons" id="coupons">抵用券<span></span></a>
+			<a class="item jifen_order" id="jifen_order">积分订单<span></span></a>
+			<a class="item team" id="team">我的团队</a>
+			<a class="item anquan_center" id="anquan_center">安全中心</a>
+			<!--<a class="item message_center" id="message_center">消息中心</a>-->
+			<a class="item my_collection" id="my_collection">我的收藏</a>
+			<a class="item problem" id="problem">使用教程</a>
+			<a class="item kefu_icon" onclick="callMobile()">客服</a>
+			<a class="item hezuo" id="hezuo">合作</a>
+			<a class="item version" id="update_check">检查更新<span id="current_version"><!--V1.0--></span></a>
+			<a class="item set" id="system_setting">系统设置</a>
+		</div>
+		<!-- 入口END -->
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+		<script src="../js/update_check.js"></script>
+		<script src="../js/my.js"></script>
+	</body> 
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>积分商城-确认订单</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+  		<script src="../js/weui/jquery-weui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/weui/fastclick.js"></script>
+  		<script src="../js/weui/swiper.js"></script>
+  		<script src="../js/join_login_page.js"></script>
+  		<script src="../js/integral_order_confirm.js"></script>
+  		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+  		<link href="../css/integral_order_confirm.css" rel="stylesheet" type="text/css" />
+  		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>积分商品详情</h1>
+		     <a class="back" onclick="back()"></a> 
+		    <!--<a href="" class="set"></a>-->
+		  </div>
+		  <div class="h88"></div>
+		 <!-- 头部END -->
+		 
+		 <!-- 头部图片STR -->
+		 <div class="top_img_div">
+		 	<img src="../images/banner.jpg" id="top_img"/>
+		 </div>
+		 <!-- 头部图片END -->
+		 
+		 <div class="amount_div">
+	        	<a>合计扣除</a>
+	        	<a id="goods_price">22</a>
+	        	<a>积分</a>
+	     </div>
+	     
+	     <div class="shouhuo_div">
+	     	<a>收货信息</a>
+	     </div>
+	     
+	     <!-- 表单STR -->
+		  <div class="pubform">
+		    <form>
+		      <div class="fgroup">
+		        <label class="fitem">
+		          <span class="fname">收货人姓名</span>
+		          <input class="ftext" id="username" name="username" type="text" placeholder="请填写收货人姓名">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">收货人电话</span>
+		          <input class="ftext" id="phone" name="phone" type="number" placeholder="请填写收货人电话">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">收货地址</span>
+		          <input class="ftext" id="address" name="address" type="text" placeholder="请填写收货地址">
+		        </label>
+		      </div>
+		    </form>
+		  </div>
+		  <!-- 表单END -->  
+		  
+		  <div class="container-footer">
+	        <!-- 兑换 -->
+	        <div id="pay-bar" class="pay-bar">
+	            <div class="pay-bar-cell1">
+	                <div class="pay-btn js-pay" onclick="dataSubmit()">确认订单</div>
+	            </div>
+	        </div>
+	        <input type="hidden" name="userId">
+	        <input type="hidden" name="goodsId">
+	        <input type="hidden" name="count">
+	        <input type="hidden" name="price">
+	    </div>
+	    
+	    <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+	    <script src="../js/toast.js"></script>
+	    <script src="../js/navigator.js"></script>
+	    <script src="../js/api.js"></script>
+	</body>
+</html>

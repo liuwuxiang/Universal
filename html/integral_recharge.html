@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>积分充值</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		  <script src="../js/integral_recharge.js"></script>
+		  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		  <script src="../js/hui.js"></script>
+		
+		  <style type="text/css">body,html{min-height:100%; }</style>
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>积分充值</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		
+		  <!-- 表单STR -->
+		  <div class="pubform">
+    <form>
+      <div class="ftitle">充值金额</div>
+      <div class="fgroup">
+        <label class="fitem price" style="height: 40px;">
+          <span class="fname" style="height: 40px;line-height: 40px;">¥</span>
+          <input class="ftext" type="number" placeholder="充值金额" id="recharge_amount" style="height: 40px;">
+        </label>
+        <div class="jfbar" style="height: 35px;">可获得<span id="integral_number">0</span>个通用积分</div>
+      </div>
+      <div class="ftitle">支付方式</div>
+      <div class="fgroup">
+        <label class="fradio" style="height: 50px;">
+          <span class="icon wxpay"></span>
+          <span class="fname">微信支付</span>
+          <input type="radio" name="pay" checked>
+          <span class="status"></span>
+        </label>
+
+        <!--<label class="fradio" style="height: 50px;">
+          <span class="icon alipay"></span>
+          <span class="fname">支付宝支付</span>
+          <input type="radio" name="pay">
+          <span class="status"></span>
+        </label>-->
+      </div>
+      <div class="fhandle">
+        <a class="fsubmit">充值</a>
+      </div>
+    </form>
+  </div>
+		  <!-- 表单END -->  
+		
+		  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script>
+		      $(function(){
+		          $('#recharge_amount').bind('input propertychange', function() {
+		              inputChange($(this).val());
+		          });
+		
+		      })
+		  </script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

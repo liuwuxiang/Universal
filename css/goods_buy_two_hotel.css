@@ -1,0 +1,291 @@
+html,
+body {
+	min-width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+/* 头部商品信息 */
+.order_title {
+	background-color: #0C90FF;
+}
+
+
+.order_title_str p {
+	margin-left: .4rem;
+	font-size: .33rem;
+	color: #FBFDFF;
+}
+
+.order_title_str div {
+	color: #000FF3;
+	top: -.7rem;
+	left: 75%;
+}
+
+
+
+/* 头部提示 */
+.order_title_tip {
+	background-color: #F9FAFC;
+	margin: 0 .2rem 0 .2rem;
+	height: .8rem;
+	line-height: .8rem;
+	border-radius: 8px;
+	position: relative;
+	top: -.3rem;
+	z-index: 2;
+	padding-left: .3rem;
+}
+
+.order_title_tip img {
+	width: .4rem;
+	height: .4rem;
+	top: .1rem;
+}
+
+/* 房间数量选择 */
+.room_number ul {
+	overflow: auto;
+}
+
+.room_number li {
+	float: left;
+	padding-left: .3rem;
+	padding-right: .3rem;
+	height: .7rem;
+	line-height: .7rem;
+	background-color: white !important;
+}
+
+.room_number img {
+	width: .3rem;
+	height: .3rem;
+}
+
+.room_number_select {
+	margin-left: .3rem;
+}
+
+.room_number_select li {
+	text-align: center;
+	float: left;
+	width: 16%;
+	height: .7rem;
+	line-height: .7rem;
+	border-radius: 5px;
+	margin: .1rem;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+
+.block-info {
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+	width: 100%;
+	background-color: white;
+}
+
+.room_select_div {
+	display: none;
+}
+
+/* 发票块 */
+.invoice_div {}
+
+.invoice_div img {
+	width: .5rem;
+	height: .5rem;
+	top: .12rem;
+}
+
+.invoice_div ul {
+	overflow: auto;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .33rem;
+}
+
+.invoice_div li {
+	float: left;
+	margin-left: .5rem;
+}
+
+.invoice {
+	color: #525252;
+	margin-left: .3rem !important;
+}
+
+.invoice_tel {
+	margin-left: .6rem !important;
+}
+
+/* 房费 */
+.fee {
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	color: #999999;
+}
+
+.fee li {
+	text-align: left !important;
+	height: .6rem !important;
+	line-height: .6rem;
+}
+
+.fee-title {
+	width: 45%;
+	float: left;
+	padding-left: 5%;
+}
+
+.fee-price {
+	width: 55%;
+	float: right;
+	text-align: right;
+	padding-right: 5%;
+}
+
+.fee>p {
+	font-size: .4rem;
+	float: right;
+	margin-right: .2rem;
+	margin-bottom: .1rem;
+	color: black;
+}
+
+.fee>p>span {
+	color: red;
+}
+
+/* 入住时间弹窗 */
+.register_time {
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+	display: none;
+	z-index: 999;
+}
+
+.register_time ul {
+	overflow: auto;
+}
+
+.register_time li {
+	float: left;
+	width: 28%;
+	height: .88rem;
+	line-height: .88rem;
+	text-align: center;
+	margin: .2rem;
+	background-color: #F2F2F2;
+	border-radius: 5px;
+	font-size: .35rem;
+}
+
+.register_time_tip {
+	margin-left: .3rem;
+	margin-top: .2rem;
+}
+
+.register_time_tip>p {
+	color: #7A7A7A;
+}
+
+.register_time_tip_title {
+	font-size: .5rem;
+	color: black !important;
+}
+
+/* 商品弹出详情 */
+.goods_info_div {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 999;
+	display: none;
+}
+
+.goods_info_facility {
+	text-align: center;
+	margin-top: .3rem;
+}
+
+.goods_info_facility ul {
+
+	overflow: auto;
+}
+
+.goods_info_facility li {
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	/* 超出显示省略号 */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+.goods_info_facility img {
+	width: .4rem;
+	height: .4rem;
+	top: .1rem;
+	left: -.1rem;
+}
+
+.goods_info_facility_content {
+	margin-left: .2rem;
+}
+
+.goods_info_facility a {
+	color: black;
+}
+
+.goods_info_rule {
+	margin-left: .2rem;
+
+}
+
+.goods_info_rule p {
+	font-size: .4rem;
+	color: black;
+}
+
+.goods_info_rule li {
+	color: #686868;
+}
+
+.goods_info_rule li:before {
+	content: "\2022";
+	color: #FEBAB3;
+	font-size: 20px;
+}
+
+.goods_info_title {
+	padding: .1rem .2rem .1rem;
+}
+
+.goods_info_title span {
+	font-size: .5rem;
+}
+
+.mui-slider-loop {
+	height: 4rem;
+}
+
+.mui-slider-item img {
+	height: 4rem;
+}
+
+.pay-tip-div {
+	font-size: .2rem !important;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	padding-top: .1rem;
+	color: #787878;
+}

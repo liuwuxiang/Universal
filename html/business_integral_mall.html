@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>全部商品</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/business_integral_mall.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link href="../css/business_integral_mall.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body style="background: white;">
+		<!-- 头部STR -->
+		<div class="head">
+			<!--标题：根据上一个页面id判断是平台、商家-->
+			<h1 id="title_head"><!--全部商品(平台)--></h1>
+			<a class="back" onclick="back()"></a>
+			<!--<a class="submit">订单</a>-->
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 蓝色渐变背景 -->
+		<!--<div class="gradientbg"></div>-->
+		<!--轮播图STR-->
+		<!--<div class="swiper-container">
+	      <div class="swiper-wrapper">
+	        <div class="swiper-slide" id="banner1"><img src="../images/banner003.png" /></div>
+	        <div class="swiper-slide" id="banner2"><img src="../images/banner004.jpeg" /></div>
+	      </div>
+	      <div class="swiper-pagination"></div>
+	   </div>-->
+		<!--轮播图END-->
+
+		<!-- 入口STR -->
+		<!--<div class="indexmenulist" id="indexmenulist">-->
+		<!--<a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费观影</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费理发</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费健身</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费洗车</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费观影</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费理发</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费健身</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费洗车</a>-->
+		<!--</div>-->
+		<!-- 入口END -->
+
+		<!--商家选项店铺对应的全部商品-->
+		<div class="integral_and_exchange_record" id="integral_and_exchange_record">
+			<div class="integral">
+				<img src="../images/jifen.png" />
+				<p>剩余积分：<span id="integral_tab">0</span></p>
+			</div>
+			<div class="version_divider"></div>
+			<div class="exchange_record">
+				<img src="../images/jifenrecord.png" />
+				<p>兑换记录</p>
+			</div>
+		</div>
+
+		<!--顶部排序标签选项-->
+		<div class="options_sort">
+			<p class="sort_all " id="sort_all">全部<img src="../images/memberSortPull.png" /> </p>
+			<p class="sort_price" id="sort_price">按价格排序<img src="../images/memberSortPull.png" /> </p>
+			<p class="sort_sales option_selected" id="sort_sales">按销量排序<img src="../images/memberSortUp.png" /> </p>
+		</div>
+
+		<!-- 热门推荐STR -->
+		<div id="pullrefresh" class="hotlist" style="margin-left: 1%;width: 98%;">
+			<!--<p class="title" style="color: black;">推荐商品</p>-->
+			<div class="list mui-scroll" id="recommrnd_div">
+				<!--<a id="integral_goods_detail.html" onclick="clicked(this.id)" class="item">
+					<span class="img"><img src="../images/img_goods.jpg" alt=""></span>
+					<p class="name">卧室舒适座椅 现代简约</p>
+					<p class="price" style="color: #fc9153;">¥ 3599.00 <span style="color: black;">¥ 499.00</span></p>
+				</a>-->
+			</div>
+		</div>
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+		<script>
+			$(".swiper-container").swiper({
+				loop: true,
+				autoplay: 2000
+			});
+		</script>
+	</body>
+
+</html>

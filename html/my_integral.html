@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的积分</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/my_integral.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/my_integral.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>我的积分</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		
+		  <!-- 积分STR -->
+		  <div class="jfhead" style="height: auto;">
+		    <div class="desc">
+		      <span class="tit">平台积分(个)</span>
+		      <p class="num" id="user_integral">0</p>
+		    </div>
+		    <div class="hadle">
+		      <a class="help"><!--帮助说明--></a>
+		      <div class="buts" id="buts">
+		        <a id="integral_forward" class="b2">提现</a>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="jfhead" style="height: auto;">
+		    <div class="desc">
+		      <span class="tit">商家积分(个)</span>
+		      <p class="num" id="business_integral">0</p>
+		    </div>
+		    <div class="hadle">
+		      <a class="help"><!--帮助说明--></a>
+		      <div class="buts" id="business_integral_button">
+		        <a id="business_integral" style="width: 90px;">查看明细</a>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="jfhead" style="height: auto;padding-bottom: 15px;">
+		    <div class="desc">
+		      <span class="tit">赠送积分(个)</span>
+		      <p class="num" id="send_integral">0</p>
+		    </div>
+		    <div class="hadle">
+		      <a class="help"><!--帮助说明--></a>
+		      <div class="buts" id="send_integral_button">
+		        <a id="send_integral" style="width: 90px;">查看明细</a>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- 积分END -->
+		
+		  <!-- Tab菜单 STR -->
+		  <!--<div class="pubtabmenu" id="pubtabmenu">
+		    <div class="wrap">
+		      <a class="item sel" id="xf_item" onclick="listOptionInit(0)">收入明细</a>
+		      <a class="item" id="cz_item" onclick="listOptionInit(1)">支出明细</a>
+		    </div>
+		  </div>-->
+		  <!-- Tab菜单 END -->
+		
+		  <!-- 明细STR -->
+		  <div class="condetaile">
+		    <ul class="list" id="list">
+		      <!--<li class="item">
+		        <div class="left">
+		          <span class="name">银币兑换</span>
+		          <span class="time">2018-05-21 10:59:22</span>
+		        </div>
+		        <div class="right">
+		          <span class="num down">-1800</span>
+		        </div>
+		      </li>-->
+		    </ul>
+		  </div>
+		  <!-- 明细END -->
+		
+		  <!-- 积分为空 -->
+		  <div class="publicnull" id="publicnull_tip">
+		    <span class="icon jf"></span>
+		    <p class="text" id="request_tip">暂无数据</p>
+		  </div>
+		
+		  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">    
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script src="plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>健身卡详情</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<script src="../js/gym_card_details.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+
+		<link href="../css/card_bag.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link href="../css/gym_card_details.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+
+	<body>
+		<!-- 导航条STR -->
+		<div class="head">
+			<h1>健身卡详情</h1>
+			<a class="back" onclick="back()"></a>
+			<a href="javascript:void(0)" class="submit" id="gym_card_renew">续费</a>
+		</div>
+		<div class="h88"></div>
+		<!-- 导航条END -->
+		<div class="qrcode_border">
+			<div class="qrcode_parent">
+				<div class="gym_card_detail_info">
+					<img class="gym_card_detail_head" id="gym_detail_head" src="../images/gymCardBusinessHead.png" />
+					<p class="gym_card_detail_name" id="gym_card_detail_name">施蒂利克健身会所</p>
+					<div class="gym_card_detail_remaining_days">
+						剩余：
+						<span id="gym_card_detail_remaining_days">123</span> 天
+					</div>
+				</div>
+				<img class="gym_card_detail_qrcode" id="gym_card_detail_qrcode" src="../images/gymCardQrCode.png" />
+			</div>
+		</div>
+
+		<div class="gym_detail_all_record">
+			<p class="gym_detail_record_title">全部记录</p>
+			<div class="divider"></div>
+			<ul class="gym_detail_record_ul" id="gym_detail_record_ul">
+				<!-- <li class="gym_detail_record_ul_li">
+					<img class="gym_detail_record_icon" id="gym_detail_record_icon" src="../images/gymCardDetailLeaveIcon.png" />
+					<p class="gym_detail_record_time" id="gym_detail_record_time">2018-12-25 23:59</p>
+					<span class="gym_detail_record_state" id="gym_detail_record_state">离开</span>
+				</li> -->
+			</ul>
+			<!--分割线-->
+			<div id="record_nomore_parent" style="visibility: visible;">
+				<div class="devider"></div>
+				<p class="gym_detail_no_more">没有更多了</p>
+			</div>
+
+			<div class="gym_detail_record_no_date" id="gym_detail_record_no_date">
+				<img class="gym_detail_record_nodate_icon" src="../images/gymCardDetailNoData.png" />
+				<p class="gym_detail_record_nodate_tips">闲暇时间</p>
+				<p class="gym_detail_record_nodate_tips">多去锻炼锻炼吧</p>
+			</div>
+		</div>
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

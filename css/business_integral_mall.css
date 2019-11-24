@@ -1,0 +1,116 @@
+.options_sort {
+	background-color: #e0e0e0;
+	width: 100%;
+	height: auto;
+	font-size: .3rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: .15rem 0;
+	margin-bottom: .1rem;
+}
+
+.options_sort p {
+	width: 33.33%;
+	text-align: center;
+	border-bottom: solid 1px #E0E0E0;
+	padding-bottom: .1rem;
+	color: black;
+	font-size: .3rem;
+}
+
+.options_sort img {
+	width: .225rem;
+	height: .225rem;
+	margin-left: 5px;
+}
+
+.option_selected {
+	font-size: .3rem !important;
+	color: #FD8C04 !important;
+	border-bottom: solid 2px #FD8C04 !important;
+}
+
+.integral_and_exchange_record {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	background: #0B8FFE;
+	padding: .2rem 0;
+	margin: 0;
+	color: white;
+	display: none;
+}
+
+.integral_and_exchange_record .integral {
+	width: 49%;
+	text-align: center;
+}
+
+.integral img {
+	border-radius: 3px;
+	width: .5rem;
+	height: .5rem;
+	float: left;
+	margin-left: .5rem;
+	padding: 1px;
+}
+
+.integral p {
+	font-size: .3rem;
+	float: left;
+	margin: 0 .2rem;
+	color: white;
+}
+
+.integral_and_exchange_record .version_divider {
+	width: 1px;
+	height: .6rem;
+	background-color: white;
+	margin: 2px;
+}
+
+.integral_and_exchange_record .exchange_record {
+	width: 49%;
+	text-align: center;
+}
+
+.exchange_record img {
+	background-color: #FF9900;
+	border-radius: 3px;
+	width: .5rem;
+	height: .5rem;
+	float: left;
+	margin-left: .5rem;
+	padding: 1px;
+}
+
+.exchange_record p {
+	font-size: .3rem;
+	float: left;
+	margin: 0 .2rem;
+	color: white;
+}
+
+.price_and_exchanged {
+	height: auto;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+.price_and_exchanged .price {
+	width: 50%;
+}
+
+.price_and_exchanged .exchanged {
+	width: 50%;
+	font-size: .275rem;
+	color: #8F8F94;
+	text-align: end;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}

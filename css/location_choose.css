@@ -1,0 +1,74 @@
+.top_div{
+	width: 100%;
+	height: 40px;
+	background: white;
+}
+
+.top_div a{
+	display: block;
+	width: 96%;
+	line-height: 40px;
+	margin-left: 2%;
+	height: 40px;
+}
+
+.city_count_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.city_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border-top: solid 0.5px #DCDCDC;
+}
+
+.s_name{
+	display: block;
+	width: 96%;
+	margin-left: 2%;
+	height: 25px;
+	line-height: 25px;
+	color: #808080;
+}
+
+.city_div ul{
+	width: 100%;
+	height: auto;
+	background: white;
+}
+
+.city_div ul li{
+	width: 96%;
+	height: 40px;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	background: white;
+	margin-left: 2%;
+	border-bottom: solid 1px #F5F5F5;
+	text-align: left;
+	line-height: 40px;
+}
+
+.right_nav{
+	width: 25px;
+	height: auto;
+	position: fixed;
+	right: 0;
+	top: 110px;
+	z-index: 9999;
+}
+
+.right_nav a{
+	display: block;
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #40E0D0;
+}

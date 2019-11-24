@@ -1,0 +1,128 @@
+.options_sort {
+	background-color: #e0e0e0;
+	width: 100%;
+	height: auto;
+	color: black;
+	font-size: .3rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: .15rem 0;
+	margin-bottom: .1rem;
+}
+
+.options_sort p {
+	width: 33.33%;
+	text-align: center;
+	border-bottom: solid 1px #E0E0E0;
+	padding-bottom: .1rem;
+	font-size: .3rem;
+	color: black;
+}
+
+.options_sort img {
+	width: .225rem;
+	height: .225rem;
+	margin-left: 5px;
+}
+
+.option_selected {
+	font-size: .3rem !important;
+	color: #FD8C04 !important;
+	border-bottom: solid 2px #FD8C04 !important;
+}
+
+.price_and_exchanged {
+	height: auto;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+.price_and_exchanged .price {
+	width: 50%;
+}
+
+.price_and_exchanged .exchanged {
+	width: 50%;
+	font-size: .275rem;
+	color: #8F8F94;
+	text-align: end;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.mask_item_title {
+	position: absolute;
+	bottom: .56rem;
+	width: 100%;
+	text-align: center;
+	font-size: .3rem;
+	padding: 2px 0;
+	color: white;
+	/*background: rgb(11,143,252);
+	opacity: 0.8;*/
+	background: rgba(11, 143, 252, 0.8);
+	white-space: nowrap;
+	visibility: visible;
+	overflow: hidden;
+	z-index: 999;
+}
+
+.mask_item_business {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: .56rem;
+	line-height: .56rem;
+	text-align: center;
+	padding:0;
+	font-size: .3rem;
+	color: white;
+	background-color: #3FB3FF;
+	white-space: normal;
+	visibility: visible;
+	display: flex;
+	align-items: center;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.mask_item_business .price_integral {
+	width: 50%;
+	height: 100%;
+	white-space: normal;
+	text-align: start;
+	padding-top: .1rem;
+	padding: 0 .1rem;
+	margin: 0;
+	font-size: .3rem;
+	color: white;
+}
+
+.mask_item_business .sales {
+	width: 50%;
+	height: 100%;
+	white-space: nowrap;
+	text-align: end;
+	font-size: .3rem;
+	color: white;
+	padding-top: .1rem;
+	padding: 0 .1rem;
+	padding-left: .5rem;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.sales img{
+	width: .35rem !important;
+	height: .35rem !important;
+	margin: 0 3px;
+	float: left;
+}
+
+.sales span{
+	margin-top: .05rem;
+}

@@ -1,0 +1,406 @@
+html,
+body {
+	background: white;
+	padding: 0;
+	margin: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: auto;
+	max-height: 120px;
+}
+
+.swiper-container img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.hotlist ul {
+	width: 98%;
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.hotlist ul li {
+	width: 100%;
+	height: auto;
+	min-height: 90px;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	margin-bottom: 10px;
+	background: #F5F5F5;
+}
+
+.li_left_div {
+	width: 30%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	/*background: red;*/
+	margin-bottom: 5px;
+}
+
+.li_left_div img {
+	/*margin-left: 5%;*/
+	margin-top: 4%;
+	width: 90%;
+	height: 81px;
+}
+
+.li_left_div a {
+	width: 100%;
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #A9A9A9;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.li_right_div {
+	width: 66%;
+	height: auto;
+	min-height: 90px;
+	margin-left: 2%;
+	float: left;
+	overflow: hidden;
+	/*background: blue;*/
+}
+
+.li_right_div a {
+	display: block;
+	text-align: left;
+	width: 98%;
+	overflow: hidden;
+}
+
+.li_right_div a:nth-child(1) {
+	margin-top: 8px;
+	height: 17px;
+	font-size: 16px;
+	line-height: 17px;
+	width: 70%;
+	color: black;
+	float: left;
+}
+
+.li_right_div a:nth-child(2) {
+	height: 17px;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	width: 30%;
+	margin-top: 8px;
+	color: #A9A9A9;
+}
+
+.li_right_div a:nth-child(3) {
+	margin-top: 10px;
+	width: 100%;
+	height: 16px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #808080;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.li_right_div a:nth-child(3)>span span:nth-child(1){
+	background: #0b8ffe;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: white;
+	margin-left: .1rem;
+}
+
+.li_right_div a:nth-child(4) {
+	margin-top: 10px;
+	width: 100%;
+	height: 16px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #808080;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.li_right_div a:nth-child(4) span {
+	background: #0b8ffe;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: white;
+}
+
+.li_right_div a:nth-child(5) {
+	display: block;
+	width: 70%;
+	height: 35px;
+	margin-top: 2px;
+	line-height: 35px;
+	font-size: 14px;
+	color: black;
+	float: left;
+	text-align: left;
+}
+
+.li_right_div a:nth-child(5) span:nth-child(1) {
+	color: black;
+	padding-left: 5px;
+	font-size: 14px;
+	text-decoration: line-through;
+}
+
+.li_right_div a:nth-child(5) span:nth-child(2) {
+	color: #F4A460;
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+.li_right_div a:nth-child(6) {
+	display: block;
+	width: 30%;
+	height: 35px;
+	margin-top: 2px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #A9A9A9;
+	float: left;
+	text-align: right;
+}
+
+.li_bottom_div {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+}
+
+.li_bottom_div .tese_div{
+	width: 80%;
+}
+
+.tese_div div {
+	display: flex !important;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 98%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+
+.tese_div div p{
+	width: auto;
+	height: auto;
+	border-radius: 3px;
+	margin: 1px 2px;
+	padding: 1px;
+	font-size: .215rem;
+}
+
+.tese_div div:nth-child(1) p{
+	color: #6699FF;
+	border: solid 1px #6699FF;
+}
+
+.tese_div div:nth-child(2) p{
+	color: gray;
+	border: solid 1px gray;
+}
+
+.vip_icon {
+	width: 20%;
+	width: auto;
+	height: 30px;
+	float: right;
+}
+
+.refresh_div {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.weui-pull-to-refresh__layer {
+	z-index: 0;
+}
+
+.recommend_div {
+	width: 100%;
+	height: auto;
+	background: white;
+	border-top: solid 10px #F5F5F5;
+	border-bottom: solid 10px #F5F5F5;
+	overflow: hidden;
+	text-align: center;
+}
+
+.recommend_div ul {
+	width: 98%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 2%;
+}
+
+.recommend_div li {
+	width: 48%;
+	height: 80px;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	margin-bottom: 10px;
+	background: #F5F5F5;
+	float: left;
+	margin-right: 2%;
+}
+
+.recommend_div li:nth-child(1) a {
+	text-align: left;
+}
+
+.recommend_div li:nth-child(3) a {
+	text-align: left;
+}
+
+.recommend_div li:nth-child(2) a {
+	text-align: right;
+}
+
+.recommend_div li:nth-child(4) a {
+	text-align: right;
+}
+
+.recommend_div li img {
+	width: 100%;
+	height: 100%;
+}
+
+.business_name {
+	display: block;
+	width: 98%;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 20px;
+	color: white;
+	text-align: left;
+	margin-left: 1%;
+	font-weight: bolder;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.business_type {
+	display: block;
+	width: 98%;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	text-align: left;
+	margin-left: 1%;
+	font-size: 13px;
+}
+
+
+/*下拉列表STR*/
+
+.mui-plus .plus {
+	display: inline;
+}
+
+.plus {
+	display: none;
+}
+
+#topPopover {
+	position: fixed;
+	top: 16px;
+	right: 6px;
+}
+
+#topPopover .mui-popover-arrow {
+	left: auto;
+	right: 6px;
+}
+
+.mui-popover {
+	height: 100px;
+	width: 120px;
+	text-align: center;
+}
+
+.mui-content {
+	padding: 10px;
+}
+
+
+/*下拉列表END*/
+
+.wnk_open_card_button {
+	display: block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background: #808080;
+	text-align: center;
+	border-radius: 30px;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 17px;
+	color: white;
+}
+
+.wnk_open_card_button_div {
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 35px;
+	margin-top: 55px;
+	position: absolute;
+	display: none;
+}
+
+.member_tehui_tag {
+	height: 20px;
+	line-height: 20px;
+	margin-top: 5px;
+	display: block;
+	width: 96%;
+	margin-left: 2%;
+	font-size: 17px;
+	color: #FF8C00;
+	margin-bottom: 0px;
+}

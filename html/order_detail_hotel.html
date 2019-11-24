@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单详情 - 酒店类型商家</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my_oder_detail_two.css" />
+		<link rel="stylesheet" type="text/css" href="../css/hui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../plus/css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="../css/order_detail_hotel.css">
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>订单详情</h1>
+			<a class="back"></a>
+		</div>
+		
+		<div class="order_info">
+			<div class="order_other">
+				<p class="order_other_title" id="order_other_title">等待商家确认 <a id="order_other_btn" href="javascript:void(0);">取消订单</a> </p>
+				<p class="order_other_tip"   id="order_other_tip">1月16日前可免费取消</p>
+			</div>
+
+		</div>
+	
+		<div class="top_div info-bloak business_info_div">
+			<div class="business_info"> 
+				<p class="business_info_title" id="business_name"><!-- 险情TIME艺术主题酒店 --></p>
+				<p class="business_info_address" id="business_address"><!-- 花柯社区天伦医院后花柯小学斜对面100米 --></p>
+			</div>
+			<div>
+				<ul>
+					<li id="business_navigation" style="border-right: 1px #CDCDCD solid;">地图导航<img src="../images/map.png"></li>
+					<li id="business_tel">联系商家<img src="../images/tel.png"></li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="top_div info-bloak">
+			<div class="top_business_div">
+				<a href="javascript:void(0);" id="commodities_name">精品大床房</a>
+				<div class="goods_info">房型详情></div>
+				<p id="specification_simple_info" >大床|不含早|有窗</p>
+				<p id="register_info">1月16日(周三)-1月18日(周五)共2晚2间</p>
+			</div>
+				<ul class="commodities_ul">
+					<li>
+						<a class="commodity_name_tag">入住人</a>
+						<a class="price_tag" id="register_name"><!-- 张三,李四 --></a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">联系手机</a>
+						<a class="price_tag" id="register_mobile"><!-- 13113111311 --></a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">预计到店</a>
+						<a class="price_tag" id="register_time"><!-- 1月16日 15:00之前 --></a>
+					</li>
+					<li style="height: .8rem !important;">
+						<a class="commodity_name_tag">入住说明</a>
+						<p class="price_tag" style="word-wrap:break-word;line-height: normal;" id="register_description">商家 <span>14:00</span> 开始办理入住,如需提前请联系商家</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--房费-->
+		<div class="top_div info-bloak">
+			<div class="top_business_div">
+				<a>房费</a>
+			</div>
+				<ul class="commodities_ul" id="order_info_ul">
+					<!-- <li>
+						<a class="commodity_name_tag">2018-12-12 不含早</a>
+						<a class="price_tag">2 x ￥166.00</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">2018-12-12 不含早</a>
+						<a class="price_tag">2 x ￥166.00</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">总价</a>
+						<a class="price_tag" style="font-size: .4rem;">￥636.00</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">通用积分</a>
+						<a class="price_tag">-￥36.00</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">实付款</a>
+						<a class="price_tag" style="font-size: .4rem;color:red !important;">￥600.00</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		
+		<!--发票报销-->
+		<div class="top_div info-bloak">
+			<div class="top_business_div">
+				<a id="business_name">发票报销</a>
+			</div>
+			<div style="padding: .3rem .5rem;">
+				如需发票报销,请向前台索取
+			</div>
+		</div>
+		
+		<!--订单信息-->
+		<div id="order_info_div" class="top_div info-bloak">
+			<div class="top_business_div">
+				<a id="order_info_div_title">订单信息(有退款)</a>
+			</div>
+				<ul class="commodities_ul">
+					<li>
+						<a class="commodity_name_tag">订单号</a>
+						<a class="price_tag" id="order_info_id"><!-- 00000000000000 --></a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">下单时间</a>
+						<a class="price_tag" id="order_info_submit_time"><!-- 2018-12-12 16:30 --></a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">付款时间</a> 
+						<a class="price_tag" id="order_info_pay_time"><!-- 2018-12-12 16:30 --></a>
+					</li>
+					<!-- <li>
+						<a class="commodity_name_tag">微信交易号</a>
+						<a class="price_tag">00000000000000</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		
+		<!--退款信息-->
+		<div id="refund_div" class="top_div info-bloak">
+			<div class="top_business_div">
+				<a id="business_name">退款信息</a>
+			</div>
+				<ul class="commodities_ul">
+					<li>
+						<a class="commodity_name_tag">退款时间</a>
+						<a class="price_tag" id="refund_time"><!-- 2018-12-12 16:30 --></a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">退款流水号</a>
+						<a class="price_tag" id="refund_id"><!-- 00000000000000 --></a>
+					</li>
+					
+					<!-- <li>
+						<a class="commodity_name_tag">到账时间</a> 
+						<a class="price_tag" id="refund_arrival_time"> 2018-12-12 16:30 </a>
+					</li> -->
+					
+					<li id="coupon_li">
+						<a class="commodity_name_tag">到账金额</a>
+						<a class="price_tag" id="refund_cash_integral_number"><!-- 600元(微信) --></a>
+					</li>
+					
+					<li>
+						<a class="commodity_name_tag">通用积分</a>
+						<a class="price_tag" id="refund_general_integral_number"><!-- +30.00 > --></a>
+					</li>
+					
+					<li>
+						<a class="commodity_name_tag">商家现金券</a>
+						<a class="price_tag" id="refund_send_integral_number"><!-- +30.00 > --></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div class="h88"></div>
+
+
+		<!--房型详情-->
+		<div class="goods_info_div">
+			<div class="goods_info_title" >
+				<p>精品大床房 <span>X</span> </p>
+			</div>
+			<div id="slider_div" class="goods_info_img mui-slider">
+					<div class="mui-slider-group mui-slider-loop" id="slider">
+
+					</div>
+			</div>
+			<div class="goods_info_config">
+				<ul id="facilities_ul">
+					<!--<li>
+						<span class="goods_info_config_title">早餐</span>
+						<span class="goods_info_config_content">无早餐</span>
+					</li>
+					<li>
+						<span class="goods_info_config_title">早餐</span>
+						<span class="goods_info_config_content">无早餐</span>
+					</li>
+					<li>
+						<span class="goods_info_config_title">早餐</span>
+						<span class="goods_info_config_content">无早餐</span>
+					</li>
+					<li>
+						<span class="goods_info_config_title">早餐</span>
+						<span class="goods_info_config_content">无早餐</span>
+					</li>-->
+				</ul>
+				<a href="javascript:void(0);">查看更多房型设置 <img src="../images/arrow_under.png" alt="" />  </a>
+			</div>
+			<div class="goods_info_rule">
+				<span>
+					使用规则
+				</span>
+				<ul id="joinOrOutTime">
+					<li>直接消费,无需美团券,携带所有入住人的有效身份证办理入住,入住必须按照一人一证</li>
+					<li>请在 <span>14:00</span> 之后入住并于次日 <span>14:00</span> 之前退房,如需提前入住或延时退房,请咨询商家</li>
+					<li>入住需要缴纳押金,金额以前台为准</li>
+				</ul>
+			</div>
+		</div>
+
+<script type="text/javascript" src="../js/gps.js"></script>
+		<script type="text/javascript" src="../js/hui.js"></script>
+		<script type="text/javascript" src="../js/mui.js"></script>
+		<script type="text/javascript" src="../plus/lib/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="../js/toast.js"></script>
+		<script type="text/javascript" src="../plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../js/navigator.js"></script>
+		<script type="text/javascript" src="../js/api.js"></script>
+		<script type="text/javascript" src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+		
+		
+		
+		
+		<script type="text/javascript" src="../js/order_detail_hotel.js"></script>
+	</body>
+
+</html>

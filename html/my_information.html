@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>个人信息</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/my_information.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../js/ajaxfileupload.js"></script>
+		  <script src="../js/common.js"></script>
+		  <script src="../js/join_login_page.js"></script>
+		  <script src="../js/my_information.js"></script>
+		  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+		  <style type="text/css">body,html{min-height:100%; }</style>
+	</head>
+	<body>
+		<!-- 头部STR -->
+	  <div class="head">
+	    <h1>个人信息</h1>
+	    <a class="back" onclick="back()"></a>
+	  </div>
+	  <div class="h88"></div>
+	  <!-- 头部END -->
+	  <input type="file" accept="image/*" style="display: none;" name="ajaxFile" id="header_file" onchange="chooseHeaderChangeFile()"/>
+	  <!-- 个人信息设置 -->
+	  <div class="pubmenulist">
+	    <a class="menuitem" id="header_tag">
+	      <span class="name">头像</span>
+	      <img class="himg" src="../images/img_head.jpg" alt="" id="header_img">
+	    </a>
+	
+	    <a id="nick_name_tag" class="menuitem">
+	      <span class="name">昵称</span>
+	      <span class="info" id="nick_name">未设置</span>
+	    </a>
+	
+	    <a class="menuitem" id="telshow">
+	      <span class="name">手机号</span>
+	      <span class="info" id="mobile">未设置</span>
+	    </a>
+	
+	    <a href="javascript:;" class="menuitem" id="mailshow">
+	      <span class="name">邮箱</span>
+	      <span class="info" id="email">未设置</span>
+	    </a>
+	
+	    <a id="sex_tag" class="menuitem">
+	      <span class="name">性别</span>
+	      <span class="info" id="sex">保密</span>
+	    </a>
+	
+	    <a class="menuitem" id="ewm">
+	      <span class="name">我的二维码</span>
+	      <span class="ewm"></span>
+	    </a>
+	    
+	     <a id="real_name_authentication" class="menuitem">
+	      <span class="name">实名认证</span>
+	    </a>
+	    
+	    <a id="owner_authentication_led" class="menuitem">
+	      <span class="name">业主认证</span>
+	      <span class="info" id="owner_authrntication">待认证</span>
+	    </a>
+	    
+	    <a id="card_authrntication_led" class="menuitem">
+	      <span class="name">车主认证</span>
+	      <span class="info" id="card_authrntication">待认证</span>
+	    </a>
+	    
+	    <a id="receiving_address_manager" class="menuitem">
+	      <span class="name">收货地址</span>
+	    </a>
+	    
+	    <!-- 二维码弹出 -->
+	    <div class="ewmshow" id="ewmshow">
+	      <div class="wrap">
+	        <img src="../images/img_head.jpg" alt="" class="img" id="qrcode_header">
+	        <span class="name boy" id="qrcode_nick_name"></span><!-- 女生替换class boy为girl  -->
+	        <p class="tel" id="qrcode_mobile"></p>
+	        <img src="../images/ewm.png" alt="" class="ewm" id="qrcode_photo">
+	        <span class="desc">扫一扫二维码加入我们</span>
+	      </div>
+	      <a href="javascript:;" class="close"></a>
+	    </div>
+	  </div>
+	
+	  <!-- 手机验证 -->
+	  <div class="floatbox" id="telfloatbox">
+	    <div class="wrap">
+	      <p class="tit">验证手机号码</p>
+	      <div class="box">
+	        <p class="msg">请输入手机接收到的短信验证码</p>
+	        <label class="floatinput">
+	          <input type="number" name="" id="mobile_code" placeholder="请填写验证码">
+	          <a onclick="getMobileCode()" class="getcode">获取验证码</a>
+	        </label>
+	      </div>
+	      <div class="handle" id="set_mobile_div">
+	        <a href="javascript:;" class="close">取消</a>
+	        <a id="set_mobile" class="submit"">确定</a>
+	      </div>
+	    </div>
+	  </div>
+	
+	  <!-- 邮箱验证 -->
+	  <div class="floatbox" id="mailfloatbox">
+	    <div class="wrap">
+	      <p class="tit">验证邮箱</p>
+	      <div class="box">
+	        <p class="msg">请输入邮箱接收到的邮箱验证码</p>
+	        <label class="floatinput">
+	          <input type="number" name="" id="email_code_number" placeholder="请填写验证码">
+	          <a onclick="getEmailCode()" class="getcode">获取验证码</a>
+	        </label>
+	      </div>
+	      <div class="handle" id="set_email_div">
+	        <a href="javascript:;" class="close">取消</a>
+	        <a id="set_email" class="submit">确定</a>
+	      </div>
+	    </div>
+	  </div>
+	
+	
+	
+	
+	
+	  <script type="text/javascript">
+	    // 显示二维码
+	    selShow("ewm","ewmshow");
+	    // 手机
+	    selShow("telshow","telfloatbox");
+	  </script>
+		<!-- UI插件 -->
+	  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+	  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+	  <script src="../plus/lib/fastclick.js"></script>
+	  <script src="../js/toast.js"></script>
+	  <script src="../plus/js/jquery-weui.js"></script>
+	  <script src="../js/navigator.js"></script>
+	  <script src="../js/api.js"></script>
+	</body>
+</html>

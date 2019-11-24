@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="zh-CN">
+  <title>注册</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="copyright" content="" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <link href="../css/common.css" rel="stylesheet" type="text/css" />
+  <link href="../css/open_member_card.css" rel="stylesheet" type="text/css" />
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/mui.js"></script>
+  <script src="../js/register.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/common-mui.js"></script>
+  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+  <script src="../js/hui.js"></script>
+  
+  <style type="text/css">body,html{min-height:100%; }</style>
+</head>
+<body>
+  <!-- 头部STR -->
+  <div class="head">
+    <h1>注册</h1>
+    <a class="back" onclick="back()"></a>
+  </div>
+  <div class="h88"></div>
+  <!-- 头部END -->
+
+  <!-- 表单STR -->
+  <div class="pubform">
+    <form>
+      <div class="fgroup">
+        <label class="fitem">
+          <span class="fname">手机号</span>
+          <input class="ftext" id="mobile" type="number" placeholder="请填写手机号码">
+        </label>
+        <label class="fitem">
+          <span class="fname">验证码</span>
+          <input class="ftext" id="code" type="text" placeholder="请填写验证码">
+          <a class="getcode" id="getcode" onclick="getMobileCode()">获取验证码</a>
+        </label>
+        <label class="fitem">
+          <span class="fname">登录密码</span>
+          <input class="ftext" id="login_pwd" type="password" placeholder="请设置登录密码">
+        </label>  
+        <label class="fitem">
+          <span class="fname">邀请码</span>
+          <input class="ftext" id="invitation_code" type="number" placeholder="请填写邀请人手机号">
+        </label>
+      </div>
+      <div class="fhandle">
+      	<div class="user_xieyi_div" id="user_xieyi_div">
+	         <img src="../images/choose_select.svg" id="xieyi_choose_img"/>
+	         <a class="xieyi_tag">我已阅读并同意</a>
+	         <a class="xieyi_content_button">《用户注册协议》</a>
+	    </div>
+        <a class="fsubmit">注册</a>
+      </div>
+    </form>
+  </div>
+  <!-- 表单END -->  
+  
+  <!-- UI插件 -->
+  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+  <script src="../plus/lib/jquery-2.1.4.js"></script>
+  <script src="../plus/lib/fastclick.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../plus/js/jquery-weui.js"></script>
+  <script src="../js/navigator.js"></script>
+  <script src="../js/api.js"></script>
+</body>
+</html>

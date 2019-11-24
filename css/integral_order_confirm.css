@@ -1,0 +1,91 @@
+.top_img_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.top_img_div img{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.amount_div{
+	width: 100%;
+	height: 40px;
+	background: white;
+	overflow: hidden;
+	margin-top: -5px;
+}
+
+.amount_div a{
+	display: block;
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	text-align: center
+}
+
+.amount_div a:nth-child(1){
+	width: 48%;
+	color: #696969;
+	text-align: left;
+	margin-left: 2%;
+	font-size: 16px;
+}
+
+.amount_div a:nth-child(2){
+	width: 25%;
+	color: red;
+	font-size: 14px;
+	text-align: right;
+}
+
+.amount_div a:nth-child(3){
+	width: 23%;
+	text-align: right;
+}
+
+.shouhuo_div{
+	width: 100%;
+	height: 40px;
+	background: white;
+	margin-top: 10px;
+	overflow: hidden;
+	border-bottom: solid 0.5px #DCDCDC;
+}
+
+.shouhuo_div a{
+	display: block;
+	width: 96%;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 2%;
+	font-size: 16px;
+	color: #696969;
+}
+
+/*兑换*/
+.container-footer{
+	
+}
+
+.pay-bar{
+	position:fixed; 
+	bottom:0; 
+	width:100%; 
+	height: 45px; 
+	font-size: 18px; 
+	text-align: center;
+	line-height:45px;
+	color: #fff;
+	background-color: #fc9153;
+}
+
+.pubform{
+	margin-bottom: 50px;
+}

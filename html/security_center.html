@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>安全中心</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/security_center.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		  <script src="../js/jquery-1.9.1.min.js"></script>
+		  <script src="../js/common.js"></script>
+		  <script src="../js/join_login_page.js"></script>
+		  <script src="../js/security_center.js"></script>
+		  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+			<script src="../js/hui.js"></script>
+			
+		  <style type="text/css">body,html{min-height:100%; }</style>
+	</head>
+	<body>
+		<!-- 头部STR -->
+	  <div class="head">
+	    <h1>安全中心</h1>
+	    <a class="back" onclick="back()"></a>
+	  </div>
+	  <div class="h88"></div>
+	  <!-- 头部END -->
+	  
+	  <!-- 设置 -->
+	  <div class="pubmenulist">
+	
+	    <a class="menuitem" id="set_login_pwd">
+	      <span class="name">登录密码设置</span>
+	    </a>
+	
+	    <a id="set_pay_pwd" class="menuitem">
+	      <span class="name">支付密码设置</span>
+	    </a>
+	
+	    <a id="telshow" class="menuitem">
+	      <span class="name">密保问题</span>
+	    </a>  
+	  </div>
+	  
+	  
+	  <!-- 手机验证 -->
+	  <div class="floatbox" id="telfloatbox">
+	    <div class="wrap">
+	      <p class="tit">验证手机号码</p>
+	      <div class="box">
+	        <p class="msg">请输入手机<span id="mobile_tag"><!--3755--></span>接收到的短信验证码</p>
+	        <label class="floatinput">
+	          <input type="number" name="" id="code" placeholder="请填写验证码">
+	          <a onclick="getMobileCode(2)" class="getcode">获取验证码</a>
+	        </label>
+	      </div>
+	      <div class="handle">
+	        <a href="javascript:;" class="close">取消</a>
+	        <a class="submit" id="submit_button">确定</a>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

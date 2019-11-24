@@ -1,0 +1,9 @@
+.refresh_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.weui-pull-to-refresh__layer{
+	z-index: 0;
+}

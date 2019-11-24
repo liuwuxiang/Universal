@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>积分订单</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/integral_orders.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/integral_orders.js"></script>
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>积分订单</h1>
+			<a class="back" onclick="back()"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- Tab菜单 STR -->
+		<div class="pubtabmenu">
+			<div class="wrap">
+				<a class="item" id="pingtai_orders" onclick="optionClick(0)">平台订单</a>
+				<a class="item" id="business_orders" onclick="optionClick(1)">商家订单</a>
+			</div>
+		</div>
+		<!-- Tab菜单END -->
+
+		<!-- Tab菜单 END -->
+		<ul class="order_in_progress_ul" id="order_in_progress_ul">
+			<!--<li class="order_li" id="order_id">
+	  		<div class="li_top_div">
+	  			<a class="order_no">订单号：<span>111111111</span></a>
+	  			<a class="order_status">待付款</a>
+	  		</div>
+	  		<div class="goods_div">
+	  			<img src="../images/banner.jpg"/>
+	  			<div class="goods_information_div">
+	  				<a>商品名称</a>
+	  				<a>收货地址</a>
+	  			</div>
+	  		</div>
+	  		<div class="li_bottom_div">
+	  			<a>共<span>1</span>件商品,实付<span>2</span>积分</a>
+	  			<a>订单追踪</a>
+	  		</div>
+	  	</li>-->
+		</ul>
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无数据</p>
+		</div>
+
+		<script src="../js/toast.js"></script>
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

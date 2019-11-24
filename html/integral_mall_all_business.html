@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>全部商品</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link href="../css/integral_mall_all_business.css" rel="stylesheet" type="text/css" />
+		<script src="../js/integral_mall_all_business.js"></script>
+		<script src="../js/hui.js"></script>
+		
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>全部商家</h1>
+			<a class="back" onclick="back()"></a>
+			<!--<a class="submit">订单</a>-->
+		</div>
+		<div class="h88"></div>
+		<!--顶部排序标签选项-->
+		<div class="options_sort">
+			<p class="sort_num_commodity " id="sort_num_commodity">按商品数量<img src="../images/memberSortPull.png" /> </p>
+			<p class="sort_integral option_selected" id="sort_integral">按积分排序<img src="../images/memberSortUp.png" /> </p>
+		</div>
+
+		<div id="pullrefresh" class="hotlist" style="margin-left: 1%;width: 98%;">
+			<div class="list mui-scroll" id="recommrnd_div">
+				<!--<a id="integral_goods_detail.html" onclick="clicked(this.id)" class="item">
+					<span class="img">
+						<img src="../images/img_goods.jpg" alt=""/>
+						<p class="mask_item_title">店铺名称</p>
+						<div class="mask_item_business">
+							<p class="price_integral">积:<span>0</span></p>
+					<p class="sales">
+						<img src="../images/shopping.png" /> 
+						<span class="num_sales">0</span>
+					</p>
+			</div>
+			</span>
+			</a>-->
+		</div>
+		</div>
+
+		<!-- 热门推荐STR -->
+		<!--<div class="hotlist" style="margin-left: 1%;width: 98%;">
+			<div class="list" id="recommrnd_div">
+				<a id="integral_goods_detail.html" onclick="clicked(this.id)" class="item">
+					<span class="img">
+						<img src="../images/img_goods.jpg" alt=""/>
+						<p class="mask_item_title">店铺名称</p>
+						<div class="mask_item_business">
+							<p class="price_integral">积:<span>0</span></p>
+							<p class="sales">
+								<img src="../images/shopping.png" />
+								<span class="num_sales">0</span>
+							</p>
+						</div>
+					</span> 
+				</a>
+			</div>
+		</div>-->
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+		<script>
+			$(".swiper-container").swiper({
+				loop: true,
+				autoplay: 2000
+			});
+		</script>
+	</body>
+
+</html>

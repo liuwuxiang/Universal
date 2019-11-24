@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>填写订单</title>
+		<script src="../js/common.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<!--<link rel="stylesheet" href="../css/weui/weui.min.css">
+		<link rel="stylesheet" href="../css/weui/jquery-weui.min.css">-->
+		<link rel="stylesheet" href="../css/shopping_cart_submit.css">
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>填写订单</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		  
+		<ul class="goods_ul">
+			<li>
+				<div class="li_left_div">
+					<img src="../images/img_goods.jpg"/>
+				</div>
+				<div class="li_right_div">
+					<a class="goods_name">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称111</a>
+					<a class="goods_guige">商品规格商品规格商品规格商品规格商品规格商品规格商品规格</a>
+					<a class="goods_price"><span>268</span>积分</a>
+					<div class="li_number_div">
+						x1
+					</div>
+				</div>
+			</li>
+		</ul>
+		
+		<div class="collect_goods_div">
+			<a class="collect_goods_tag">收货信息</a>
+			<!-- 表单STR -->
+		  <div class="pubform">
+		    <form>
+		      <div class="fgroup">
+		        <label class="fitem">
+		          <span class="fname">收货人姓名</span>
+		          <input class="ftext" type="text" placeholder="请填写收货人姓名">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">收货人电话</span>
+		          <input class="ftext" type="number" placeholder="请填写收货人电话">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">收货地址</span>
+		          <input class="ftext" type="text" placeholder="请填写收货地址">
+		        </label>    
+		      </div>
+		    </form>
+		  </div>
+		  <!-- 表单END -->
+		</div>
+		
+		<div class="container-footer">
+	        <div id="pay-bar" class="pay-bar">
+	            <a class="cart_price_tag">合计:<span>268</span>积分</a>
+	            <a class="jiesuan_button">去结算(1)</a>
+	        </div>
+	   </div>
+	   
+	   <link rel="stylesheet" href="../plus/lib/weui.min.css">
+	   <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+	   <script src="../js/navigator.js"></script>
+	   <script src="../js/api.js"></script>
+	</body>
+</html>

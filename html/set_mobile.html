@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>绑定手机</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		  <script src="../js/jquery-1.9.1.min.js"></script>
+		  <script src="../js/common.js"></script>
+		  <script src="../js/join_login_page.js"></script>
+		  <script src="../js/set_mobile.js"></script>
+		  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		  <script src="../js/hui.js"></script>
+		  <script src="../js/api.js"></script>
+		  <style type="text/css">body,html{min-height:100%; }</style>
+		  <script src="../js/navigator.js"></script>
+	</head>
+	<body>
+		 <!-- 头部STR -->
+		  <div class="head">
+		    <h1>绑定手机</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		
+		  <!-- 表单STR -->
+		  <div class="pubform">
+		    <form>
+		      <div class="ftitle">绑定手机号可以最大程度的保障您的账户安全</div>
+		      <div class="fgroup">
+		        <label class="fitem">
+		          <span class="fname">手机号</span>
+		          <input class="ftext" id="number_input" type="number" placeholder="请填写手机号码">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">验证码</span>
+		          <input class="ftext" type="text" placeholder="请填写验证码">
+		          <a onclick="getMobileCode()" class="getcode">获取验证码</a>
+		        </label>      
+		      </div>
+		      <div class="fhandle">
+		        <a class="fsubmit">绑定手机</a>
+		      </div>
+		    </form>
+		  </div>
+		  <!-- 表单END -->  
+	</body>
+</html>

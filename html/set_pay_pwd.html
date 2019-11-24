@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>修改支付密码</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		  <script src="../js/jquery-1.9.1.min.js"></script>
+		  <script src="../js/common.js"></script>
+		  <script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		  <script src="../js/set_pay_pwd.js"></script>
+		  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+		  <style type="text/css">body,html{min-height:100%; }</style>
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>支付密码设置</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		
+		  <!-- 通用表单 -->
+		  <div class="pubform">
+		    <form>
+		
+		      <div class="ftitle">新密码</div>
+		      <div class="fgroup one">
+		        <label class="fitem full">
+		          <input class="ftext" id="new_pay_pwd" type="password" placeholder="请填写新的支付密码">
+		        </label>
+		      </div>
+		
+		      <div class="ftitle">确认新密码</div>
+		      <div class="fgroup one">
+		        <label class="fitem full">
+		          <input class="ftext" id="new_agin_pay_pwd" type="password" placeholder="请再次确认新的支付密码">
+		        </label>
+		      </div>
+			
+			<div class="ftitle">验证码</div>
+		      <div class="fgroup one">
+		        <label class="fitem full">
+		          <input class="ftext" id="code" type="text" placeholder="请填写验证码">
+          		  <a onclick="getMobileCode(1)" id="getcode" class="getcode">获取验证码</a>
+		        </label>
+		      </div>
+		
+		      <div class="fhandle">
+		        <a onclick="setPayPwd()" class="fsubmit">设置</a>
+		      </div>
+		
+		    </form>
+		  </div>
+		  
+		  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

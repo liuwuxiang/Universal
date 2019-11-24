@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>积分商城</title>
+		
+		<link href="../css/weui/jquery-weui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/my_integral_two.css" rel="stylesheet" type="text/css" />
+		<!--注意：integral_mall.css中对顶部切换选项卡样式做了修改，覆盖了my_integral_two.css中对mui样式的修改-->
+		<link href="../css/integral_mall.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		 
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/integral_mall.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		
+		
+		
+		<script src="../js/url_webview.js"></script>
+		<script src="../js/hui.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider mui-fullscreen" style="height: 0;"></div>
+		<!-- 头部STR -->
+		<!--<div class="head">
+			<div class="serch" id="top_search_div" style="width: 62%;margin-left: 22%;">
+				<input type="text" id="search_content" placeholder="搜商家" readonly="readonly">
+				<a class="searchsubmit">搜索</a>
+			</div>
+			<a class="back top_back_button" onclick="back()" style="display: none;"></a>
+			<!--<a href="/property_system/wx/v1.0.0/joinPropertyNotice" class="msg sel address"></a>-->
+		<!-- sel表示有消息  -->
+		<!--<a class="address" id="current_city_name" style="display: none;">曲靖市</a>-->
+		<!--<a id="scan_button" class="scan" style="display: none;"></a>-->
+		<!--<a id="message_center" class="msg sel" href="#topPopover"></a> <!-- sel表示有消息  -->
+		<!--</div>-->
+
+		<!--修改头部搜索为Tab切换平台、商家-->
+		<div class="head">
+			<div id="segmentedControl" class="mui-segmented-control">
+				<a class="mui-control-item mui-control-item-one mui-active" name="platform_mall">平台</a>
+				<a class="mui-control-item" name="business_mall">商家</a>
+			</div>
+			<p class="help_integral_mall" id="help_integrall_mall">帮助</p>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 蓝色渐变背景 -->
+		<div class="gradientbg"></div>
+
+		<!--轮播图STR-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--
+					data-type=0:跳转到商家主页的轮播图,
+					data-type=1:跳转到内容页的轮播图,
+					data-type=2:系统轮播图,当data-type=1时id值为长图链接,当data-type=0时id值为商家id-->
+				<div class="swiper-slide" id="banner1" data-type="2"><img src="../images/banner003.png" /></div>
+				<div class="swiper-slide" id="banner2" data-type="2"><img src="../images/banner004.jpeg" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--轮播图END-->
+
+		<!-- 入口STR -->
+		<!--<div class="indexmenulist" id="indexmenulist">-->
+		<!--<a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费观影</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费理发</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费健身</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费洗车</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费观影</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费理发</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费健身</a>
+	  <a id="integral_goods.html" class="item" onclick="clicked(this.id)"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费洗车</a>-->
+		<!--</div>-->
+
+		<!--修改Grid列表为积分、兑换记录-->
+		<div class="integral_and_exchange_record">
+			<div class="integral">
+				<img src="../images/jifen.png" />
+				<p>积分：<span id="integral_tab">0</span></p>
+			</div>
+			<div class="version_divider"></div>
+			<div class="exchange_record">
+				<img src="../images/jifenrecord.png" />
+				<p>兑换记录</p>
+			</div>
+		</div>
+
+		<!-- 入口END -->
+
+		<!--商户积分商城入口-->
+		<!--<div class="business_integrall_mall_div">
+				<img src="../images/business_integrall_mall.png" />
+			</div>-->
+
+		<!--修改积分商城入口：图片改为“全部”字样-->
+
+		<!-- 热门推荐STR -->
+		<div class="hotlist" style="margin-left: 1%;width: 98%;">
+			<div class="title_div">
+				<p class="title title_rec_plat" style="color: black;">推荐专区</p>
+				<a class="all_integral" id="all_integral">全部 》</a>
+			</div>
+
+			<div class="list" id="recommrnd_div">
+				<a id="integral_goods_detail.html" onclick="clicked(this.id)" class="item">
+					<span class="img">
+							<img src="../images/img_goods.jpg" alt="">
+							<p class="mask_item_business">辰蓝出行</p>
+						</span>
+					<p class="name">卧室舒适座椅 现代简约</p>
+					<p class="price" style="color: #fc9153;">¥ 3599.00<span style="color: black;">¥ 499.00</span></p>
+				</a>
+			</div>
+		</div>
+
+		
+		
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

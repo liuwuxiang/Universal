@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单详情</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/business_integral_mall_orders_detail.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		  <script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/mui.js"></script>  
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/business_integral_mall_orders_detail.js"></script>
+		  <link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>订单详情</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		  
+		  <div class="top_div">
+		  		<img src="../images/banner.jpg"/>
+		  		<div class="amount_div">
+			        	<a>合计扣除</a>
+			        	<a id="goods_price">0</a>
+			        	<a>积分</a>
+			     </div>
+		  </div>
+		
+		<div class="order_information_div">
+	  		<a id="line_time_tag">订单号：<span id="order_no"></span></a>
+	  		<a id="count_amount_tag">订单状态：<span id="status"></span></a>
+	  		<a id="order_no_tag">订单商家：<span id="express_name"></span></a>
+	  		<a id="order_no_tag">下单时间：<span id="line_time"></span></a>
+	  </div>
+	  	
+	  	<div class="qrcode_div" id="qrcode_div">
+	  		<img src="" id="qr_code_img"/>
+	  		<a>使用时出示此二维码</a>
+	  	</div>
+	  	
+	  	<div class="order_information_div">
+	  		<a id="line_time_tag">联系人：<span id="username"></span></a>
+	  		<a id="count_amount_tag">联系方式：<span id="phone"></span></a>
+	  	</div>
+	  	
+	  	
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script>
+            $(function() {
+                FastClick.attach(document.body);
+            });
+//          getParam();
+		</script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+</html>

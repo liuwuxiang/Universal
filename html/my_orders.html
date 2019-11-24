@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的订单</title>
+		<link href="../css/my_orders.css" rel="stylesheet" type="text/css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider mui-fullscreen" style="height: 0;"></div>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>我的订单</h1>
+			<!--<a class="back" onclick="back()"></a>-->
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+		<!-- Tab菜单 STR -->
+		<div class="pubtabmenu">
+			<div class="wrap">
+				<!--<a class="item" id="no_pay_order" onclick="optionClick(0)">待支付</a>-->
+				
+				<a class="item" id="hotel_order" onclick="optionClick(3)">酒店类</a>
+				<a class="item" id="no_make_order" onclick="optionClick(1)">待使用</a>
+				<a class="item" id="finish_order"  onclick="optionClick(2)">已完成</a>
+				<!--<a class="item" id="quanyi_order" onclick="optionClick(3)">权益订单</a>-->
+			</div>
+		</div>
+		<a class="top_people_static_tag" id="top_people_static_tag">消费次数：0次</a>
+		<a class="top_number_static_tag" id="top_number_static_tag">金额：0元</a>
+		<!-- Tab菜单 END -->
+		<ul class="order_in_progress_ul" id="order_in_progress_ul">
+			<!--<li class="order_li" id="my_oder_detail.html">
+	  		<div class="li_top_div">
+	  			<a class="li_top_day_tag">24</a>
+	  			<a class="li_order_no_tag">商家名称</a>
+	  		</div>
+	  		<div class="li_commodites_div">
+	  			<a class="commodities_number_tag">商品(10)</a>
+	  			<ul class="commodities_ul">
+	  				<li>
+	  					<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+	  					<a class="commodity_number_tag">x1</a>
+	  					<a class="price_tag">35.00</a>
+	  				</li>
+	  				<li>
+	  					<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+	  					<a class="commodity_number_tag">x1</a>
+	  					<a class="price_tag">35.00</a>
+	  				</li>
+	  			</ul>
+	  		</div>
+	  		<div class="li_bottom_div">
+	  			<a class="line_order_time">2018/09/10 15:30:10</a>
+	  			<a class="order_price_tag">￥70.00</a>
+	  		</div>
+	  	</li>
+	  	<li class="order_li" id="my_oder_detail.html">
+	  		<div class="li_top_div">
+	  			<a class="li_top_day_tag">24</a>
+	  			<a class="li_order_no_tag">NO.1111111</a>
+	  		</div>
+	  		<div class="li_commodites_div">
+	  			<a class="commodities_number_tag">基础信息</a>
+	  			<div class="user_div">
+	  				<a>商家分类：111</a>
+	  				<a>商家名称：男</a>
+	  			</div>
+	  		</div>
+	  		<div class="li_bottom_div">
+	  			<a class="line_order_time">2018/09/10 15:30:10</a>
+	  			<a class="order_price_tag">成功</a>
+	  		</div>
+	  	</li>-->
+		</ul>
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无数据</p>
+		</div>
+		
+		<script src="../js/hui.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/my_orders.js"></script>
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>提交订单</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/goods_buy_two.js"></script>
+		<link href="../css/goods_buy_two.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<link href="../css/mui.min.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>提交订单</h1>
+			<a class="back" onclick="back()"></a>
+			<!--<a href="" class="set"></a>-->
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<div class="top_div">
+			<a class="commodities_number_tag">商品</a>
+		</div>
+
+		<ul class="commodities_ul">
+			<li>
+				<a class="commodity_name_tag" id="commodity_name">商品规格信息</a>
+				<a class="donation_ratio" id="commodity_donation_ratio_div"><span>送</span>消费即赠<span id="commodity_donation_ratio">***</span></a>
+				<a class="price_tag" id="commodity_price">￥0</a>
+				<a class="member_price" id="member_price" style="display: none;">会员价：</a>
+				<div class="number_div">
+					<input type="button" value="-" class="jianhao_input" onclick="commodity_number(0)" />
+					<a class="commodity_number_tag" id="commodity_number_tag">1</a>
+					<input type="button" value="+" onclick="commodity_number(1)" />
+				</div>
+			</li>
+			<li class="xiaoji_li">
+				<div class="xiaoji_div">
+					<a class="order_price" id="order_price">0</a>
+					<a class="amount_fuhao">￥</a>
+					<a class="xiaoji_tip">小计</a>
+				</div>
+				<p class="limit_tip" style="display: none;">
+					<span style="color: red;font-weight: bold;font-size: 14px;">提示：</span>(<span id="limit_type">电影万能卡</span>权益消费价格一个账号一天限制消费
+					<span id="limit_time">0</span> 次，超过规定次数后恢复正常价格。)
+				</p>
+			</li>
+		</ul>
+
+		<div class="top_div pay_way_div">
+			<a class="commodities_number_tag">支付方式</a>
+		</div>
+
+		<div class="integral_div">
+			<img src="../images/general_integral.png" />
+			<a class="integral_type">通用积分<span>可用积分:</span><span class="integral_balance" id="general_integral_balance">0</span></a>
+			<input class="weui-switch" type="checkbox" onchange="integral_make_swith(0)">
+			<div class="integral_number_div" id="gengeral_integral_div">
+				<a>使用</a>
+				<input type="number" id="general_integral_pay_amount" value="0" disabled="disabled" />
+				<a>通用积分,抵<span id="general_integral_deduction_amount">0</span>元</a>
+			</div>
+		</div>
+
+		<div class="integral_div">
+			<img src="../images/send_integral.png" />
+			<a class="integral_type">商家现金劵<span>可用:</span><span class="integral_balance" id="cash_coupon_balance">0</span></a>
+			<input class="weui-switch" type="checkbox" onchange="integral_make_swith(1)">
+			<div class="integral_number_div" id="cash_coupon_div">
+				<a>使用</a>
+				<input type="number" id="cash_coupon_pay_number" value="0" disabled="disabled" />
+				<a>现金劵,抵<span id="cash_coupon_deduction_amount">0</span>元</a>
+			</div>
+		</div>
+
+		<div class="integral_div">
+			<img src="../images/icon/coupons.svg" />
+			<a class="integral_type">优惠券<span>剩余:</span><span class="integral_balance" id="coupon_balance">0</span></a>
+			<input class="weui-switch" type="checkbox" onchange="integral_make_swith(2)">
+			<div class="integral_number_div" id="coupon_div">
+				<a>使用</a>
+				<input type="number" id="coupon_pay_number" value="0" disabled="disabled" />
+				<a>张优惠券,抵<span id="coupon_deduction_amount">0</span>元</a>
+			</div>
+		</div>
+
+		<!-- 表单STR -->
+		<div class="pubform">
+			<div class="wx_pay_div" id="wx_pay_div" onclick="pay_choose(0)">
+				<img src="../images/icon/icon_pay_wx.svg" class="pay_icon" />
+				<a class="pay_type">微信支付</a>
+				<div class="pay_amount_div">
+					<img src="../images/choose.svg" id="wx_pay" />
+					<a class="pay_amount" id="pay_amount">￥0元</a>
+				</div>
+				
+			</div>
+			
+			<div class="fhandle">
+				<a class="fsubmit" id="submit_pay">支付</a>
+			</div>
+		</div>
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

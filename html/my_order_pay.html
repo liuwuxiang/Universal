@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单支付</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/my_order_pay.js"></script>
+		<link href="../css/goods_buy.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		  <script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>订单支付</h1>
+		     <a class="back" onclick="back()"></a> 
+		    <!--<a href="" class="set"></a>-->
+		  </div>
+		  <div class="h88"></div>
+		 <!-- 头部END -->
+		 
+		 <div class="top_div">
+  			<a class="commodities_number_tag">订单信息</a>
+  		</div>
+  		
+  		<ul class="commodities_ul">
+  			<li>
+  				<a class="commodity_name_tag" id="commodity_name">订单号：</a>
+  			</li>
+  			<li>
+  				<a class="commodity_name_tag" id="line_order_time">下单时间：</a>
+  			</li>
+  			<li class="xiaoji_li">
+				<a class="order_price" id="order_price">0</a>
+				<a class="amount_fuhao">￥</a>
+				<a class="xiaoji_tip">总价</a>
+  			</li>
+  		</ul>
+  		
+  		<div class="top_div pay_way_div">
+  			<a class="commodities_number_tag">支付方式</a>
+  		</div>
+  		<!-- 表单STR -->
+		  <div class="pubform">
+		    <!--<form>-->
+		      <div class="fgroup" id="pay_war_div">
+				  <label class="fradio" style="height: 50px;">
+					  <span class="icon" style="background-image: url(../images/general_integral.png);"></span>
+					  <span class="fname">通用积分</span>
+					  <input type="radio" name="pay" id="general_integral_radio" checked>
+					  <span class="status"></span>
+				  </label>
+
+				  <!--<label class="fradio" style="height: 50px;">
+					  <span class="icon" style="background-image: url(../images/consumption_integral.png);"></span>
+					  <span class="fname">消费积分</span>
+					  <input type="radio" name="pay" id="consumption_integral_radio">
+					  <span class="status"></span>
+				  </label>-->
+				  
+				  <label class="fradio" style="height: 50px;">
+					  <span class="icon" style="background-image: url(../images/send_integral.png);"></span>
+					  <span class="fname">现金劵</span>
+					  <input type="radio" name="pay" id="send_integral_radio">
+					  <span class="status"></span>
+				  </label>
+
+				  <label class="fradio" style="height: 50px;">
+					  <span class="icon wxpay"></span>
+					  <span class="fname">微信支付</span>
+					  <input type="radio" name="pay" id="wx_pay_radio">
+					  <span class="status"></span>
+				  </label>
+		      </div>
+		      <div class="fhandle">
+		        <a class="fsubmit" id="submit_pay">支付</a>
+		      </div>
+		    <!--</form>-->
+		  </div>
+		  
+		  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

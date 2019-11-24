@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>店铺信息-酒店类商家</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/hui.css" />
+		<link rel="stylesheet" type="text/css" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../plus/css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/business_detail.css" />
+		<link rel="stylesheet" type="text/css" href="../css/business_detail_hotel.css" />
+		<!--日历-->
+		<link rel="stylesheet" type="text/css" href="../css/calendar.css" />
+
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head" style="background: none;">
+			<a class="back2" onclick="back()"><img src="../images/icon/icon_back.svg"></a>
+			<a id="user_collection" class="shouchang" onclick="collectionOrCancelBusiness()"><img id="shouchang_img" src="../images/icon/shouchang.svg"></a>
+			<!-- sel表示有消息  -->
+		</div>
+
+		<!--轮播图STR-->
+		<div class="swiper-container" style="height: 200px;">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper" id="swiper-wrapper">
+				<!-- Slides -->
+				<!--<div class="swiper-slide"><img src="../images/banner.jpg" /></div>
+	        <div class="swiper-slide"><img src="../images/banner.jpg" /></div>
+	        <div class="swiper-slide"><img src="../images/banner.jpg" /></div>-->
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--轮播图END-->
+
+		<!-- 商家信息div -->
+		<div class="business_information_div">
+			<div class="business_information_one">
+				<a class="business_name" id="business_name"></a>
+				<div class="xx_div">
+					<img src="../images/xingji.png" />
+					<img src="../images/xingji.png" />
+					<img src="../images/xingji.png" />
+					<img src="../images/xingji.png" />
+					<img src="../images/xingji.png" />
+					<a>5.0分</a>
+				</div>
+			</div>
+			<div class="address_div">
+				<div class="left_address_div">
+					<img src="../images/icon/location_icon.png" />
+					<a id="address"></a>
+				</div>
+				<div class="right_mobile_div" onclick="callMobile()">
+					<img src="../images/icon/mobile_icon.png" />
+				</div>
+			</div>
+
+			<div class="store_state_div">
+				<a class="tese_tag store_state" id="yingye_date">营业时间:</a><span id="kaiye_state"></span>
+			</div>
+			<a class="tese_tag">特色内容:<span id="tese_content"></span></a>
+			<a class="tese_tag">服务内容:<span id="fuwu_content"></span></a>
+		</div>
+
+		<!-- 商品信息 -->
+		<div class="commodity_information_div">
+			<!-- 入住时间选择 -->
+			<!--<div class="prices_div">
+				<input type="text" class="weui-input" placeholder="请选择入住时间" data-toggle='date' id="date_start" />
+				<a href="javascript:void(0);" id="time_difference">共0晚</a>
+				<input type="text" class="weui-input" placeholder="请选择退房时间" data-toggle='date' id="date_end" />
+			</div>-->
+
+			<!--入住时间-->
+			<div id="checkinout">
+				<div id="firstSelect" style="width:100%;">
+					<div class="Date_lr" style="float:left;">
+						<p id="startWeekDay">入住</p>
+						<input id="startDate" type="text" value="" style="" readonly>
+					</div>
+					<div class="Date_lr" style="float:right;">
+						<p id="endWeekDay">离店</p>
+						<input id="endDate" type="text" value="" style="" readonly>
+					</div>
+					<span class="span21">共<span class="NumDate">1</span>晚</span>
+				</div>
+			</div>
+			<!--提示-->
+			<div class="mask_calendar">
+				<div class="calendar"></div>
+				<div class="calendar_tishi">请选择离店日期...</div>
+			</div>
+
+			<div class="business_type_div">
+				<ul class="business_type_ul" id="business_type_ul">
+					<!--<li class="li_type sel" id="1" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类1</a>
+			  		</li>
+			  		<li class="li_type" id="2" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类2</a>
+			  		</li>
+			  		<li class="li_type" id="3" onclick="businessTypeClick(this.id)">
+			  			<a>测试分类3</a>
+			  		</li>-->
+				</ul>
+			</div>
+			<ul class="goods_ul" id="goods_ul">
+				<!--<li onclick="goodsDetail(0)">
+					<div class="li_left_div">
+						<img src="../images/img_goods.jpg" onerror="this.src='../images/logo.jpg'"/>
+					</div>
+					<div class="li_right_div">
+						<a class="goods_name">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称111</a>
+						<a class="goods_guige">商品规格商品规格商品规格商品规格商品规格商品规格商品规格</a>
+						<a class="goods_price">￥<span class="routine_price">268.00</span><span class="member_price" id="member_price">会员价</span></a>
+						<!--<div class="li_number_div">
+							<input type="button" value="购买"/>
+						</div>-->
+				<!--</div>
+				</li>-->
+			</ul>
+
+		</div>
+
+		<script type="text/javascript" src="../js/mui.js"></script>
+		<script type="text/javascript" src="../js/common-mui.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/weui/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="../js/weui/fastclick.js"></script>
+		<script type="text/javascript" src="../js/weui/jquery-weui.js"></script>
+		<script type="text/javascript" src="../js/weui/swiper.js"></script>
+		<script type="text/javascript" src="../js/two_page_back.js"></script>
+		<script type="text/javascript" src="../js/join_login_page.js"></script>
+		<script type="text/javascript" src="../js/business_detail_hotel.js"></script>
+		<script type="text/javascript" src="../js/hui.js"></script>
+		<script type="text/javascript" src="../js/gps.js"></script>
+		<script type="text/javascript" src="../js/toast.js"></script>
+		<script type="text/javascript" src="../js/navigator.js"></script>
+		<script type="text/javascript" src="../js/api.js"></script>
+		<script type="text/javascript" src="../js/date.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>扫一扫</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/barcode.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+		<style>
+			#barcode {
+				width: 100%;
+				position: absolute;
+				top: .88rem;
+				bottom:-0.8rem;
+				text-align: center;
+				display: inline;
+				/*border: 1px red solid;*/
+			}
+		</style>
+	</head>
+	<body style="background-color: #000000;">
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>扫一扫</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <div id="barcode"></div>
+		  
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<!--地理位置坐标系转换-->
+		<script src="../js/gps.js"></script>
+		<script src="../js/search_two.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/search_two.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<div class="serch" style="width: 80%;margin-left: 5%;">
+				<input type="search" id="search_content" style="text-align: left;" placeholder="输入商家、商品搜索" onclick="searchInputClick()">
+				<a class="searchsubmit" onclick="back()">取消</a>
+			</div>
+			<!--<a class="back" onclick="back()"></a>-->
+		</div>
+		<div class="h88"></div>
+		<div class="cover_div" onclick="coverClick()"></div>
+		<!-- 头部END -->
+		<a class="search_title_tip">热门搜索</a>
+		<ul class="tag_ul" id="holt_ul">
+			<!--<li>华夏影城</li>-->
+		</ul>
+
+		<div class="history_title_div">
+			<a>搜索历史</a>
+			<img src="../images/delete_icon_img.png" id="delete_history_record" />
+		</div>
+		<ul class="tag_ul" id="search_history_ul">
+			<!--<li>华夏影城</li>-->
+		</ul>
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+</html>

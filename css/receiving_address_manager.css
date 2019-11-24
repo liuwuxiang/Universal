@@ -1,0 +1,75 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: #F2F2F2 !important;
+}
+
+.tip_tag{
+	display: block;
+	width: 96%;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 2%;
+	font-size: 15px;
+	color: #808080;
+}
+
+.input_div{
+	width: 100%;
+	height: 40px;
+	background: white;
+}
+
+.input_div input{
+	width: 96%;
+	height: 40px;
+	padding: 0;
+	margin-left: 2%;
+	border: #323232;
+	font-size: 16px;
+}
+
+.input_choose_div{
+	width: 100%;
+	height: 40px;
+	background: white;
+}
+
+.input_choose_div a{
+	display: block;
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 2%;
+	border: #323232;
+	font-size: 16px;
+	float: left;
+	color: #A9A9A9;
+}
+
+.input_choose_div img{
+	display: block;
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	float: right;
+	margin-right: 3px;
+}
+
+.set_button{
+	display: block;
+	width: 96%;
+	height: 40px;
+	margin-top: 15px;
+	float: left;
+	border: 0;
+	-webkit-appearance: none;
+	border-radius: 8px;
+	margin-left: 2%;
+	color: white;
+	font-size: 15px;
+	background: #1E91FB;
+	line-height: 0;
+}

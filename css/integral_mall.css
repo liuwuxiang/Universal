@@ -1,0 +1,178 @@
+html,
+body {
+	background: white;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	/*touch-action: none;*/
+}
+
+.business_integrall_mall_div {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.business_integrall_mall_div img {
+	width: 100%;
+	height: auto;
+}
+
+.swiper-container {
+	width: 100%;
+	height: auto;
+	max-height: 120px;
+}
+
+.swiper-container img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*修改mui样式*/
+
+.mui-segmented-control {
+	background: white !important;
+	width: 50% !important;
+	margin-left: 27% !important;
+	height: .66rem !important;
+	margin-top: .11rem !important;
+	overflow: hidden !important;
+	border: solid 1px white !important;
+}
+
+.help_integral_mall {
+	color: white;
+	font-size: .3rem;
+	position: absolute;
+	right: .2rem;
+	top: .2rem;
+	width: auto;
+	height: .465rem;
+	line-height: .465rem;
+	text-align: center;
+	border: solid 1px white;
+	border-radius: .1rem;
+	padding: 0 .25rem;
+}
+
+.title_div {
+	display: flex;
+	align-items: center;
+	margin: .1rem 0;
+	padding: .1rem;
+	background-color: white;
+}
+
+.title_rec_plat {
+	display: inline-block !important;
+}
+
+.all_integral {
+	color: gray;
+	font-size: .32rem;
+	padding: .2rem;
+	position: absolute;
+	right: 0;
+}
+
+.integral_and_exchange_record {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	background: white;
+	padding: .2rem;
+}
+
+.integral_and_exchange_record .integral {
+	width: 49%;
+}
+
+.integral img {
+	background-color: #0B8FFE;
+	border-radius: 3px;
+	width: .6rem;
+	height: .6rem;
+	float: left;
+	margin-left: .5rem;
+	padding: 1px;
+}
+
+.integral p {
+	color: black;
+	font-weight: bold;
+	font-size: .335rem;
+	float: left;
+	margin: 0 .2rem;
+}
+
+.integral_and_exchange_record .version_divider {
+	width: 1px;
+	height: .7rem;
+	background-color: gray;
+	margin: 2px;
+}
+
+.integral_and_exchange_record .exchange_record {
+	width: 49%;
+	text-align: center;
+}
+
+.exchange_record img {
+	background-color: #FF9900;
+	border-radius: 3px;
+	width: .6rem;
+	height: .6rem;
+	float: left;
+	margin-left: .5rem;
+	padding: 1px;
+}
+
+.exchange_record p {
+	color: black;
+	font-weight: bold;
+	font-size: .335rem;
+	float: left;
+	margin: 0 .2rem;
+}
+
+.price_and_exchanged {
+	height: auto;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+.price_and_exchanged .price {
+	width: 50%;
+}
+
+.price_and_exchanged .exchanged {
+	width: 50%;
+	font-size: .275rem;
+	color: #8F8F94;
+	text-align: end;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.mask_item_business {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: .1rem;
+	font-size: .3rem;
+	color: white;
+	background-color: #3FB3FF;
+	white-space: nowrap;
+	visibility: hidden;
+	/*display: none;*/
+}

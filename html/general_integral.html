@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>通用积分</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/general_integral.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/general_integral.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+	  <div class="head">
+	    <h1>通用积分</h1>
+	    <a class="back" onclick="back()"></a>
+	    <a class="help_icon" id="help_icon" name="help_icon"></a>
+	  </div>
+	  <div class="h88"></div>
+	  <!-- 头部END -->
+	
+	  <!-- 积分STR -->
+	  <div class="jfhead">
+	    <div class="desc">
+	      <span class="tit">积分余额(分)</span>
+	      <p class="num" id="general_integral_balance">0</p>
+	    </div>
+	    <div class="hadle">
+	      <a href="" class="help"><!--帮助说明--></a>
+	      <div class="buts" id="buts">
+	        <!--<a id="integral_exchange">兑换</a>-->
+	        <a id="integral_recharge" class="b1">充值</a>
+	        <a id="general_integral_forward" class="b2">提现</a>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- 积分END -->
+	
+	  <!-- Tab菜单 STR -->
+	  <div class="pubtabmenu" id="pubtabmenu">
+	    <div class="wrap">
+	      <a class="item sel" id="xf_item" onclick="listOptionInit(0)">消费明细</a>
+	      <a class="item" id="cz_item" onclick="listOptionInit(1)">收入明细</a>
+	      <a class="item" id="tx_item" onclick="listOptionInit(2)">提现明细</a>
+	    </div>
+	  </div>
+	  <!-- Tab菜单 END -->
+	
+	  <!-- 明细STR -->
+	  <div class="condetaile">
+	    <ul class="list" id="list">
+	      <!--<li class="item">
+	        <div class="left">
+	          <span class="name">银币兑换</span>
+	          <span class="time">2018-05-21 10:59:22</span>
+	        </div>
+	        <div class="right">
+	          <span class="num down">-1800</span>
+	        </div>
+	      </li>-->
+	
+	    </ul>
+	  </div>
+	  <!-- 明细END -->
+	
+	  <!-- 积分为空 -->
+	  <div class="publicnull" id="publicnull_tip">
+	    <span class="icon jf"></span>
+	    <p class="text" id="request_tip">暂无数据</p>
+	  </div>
+	
+	  <!-- UI插件 -->
+	  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+	  <link rel="stylesheet" href="../plus/css/jquery-weui.css">    
+	  <script src="../plus/lib/jquery-2.1.4.js"></script>
+	  <script src="../plus/lib/fastclick.js"></script>
+	  <script src="../js/toast.js"></script>
+	  <script src="../plus/js/jquery-weui.js"></script>
+	  <script src="../js/navigator.js"></script>
+	  <script src="../js/url_webview.js"></script>
+	  <script src="../js/api.js"></script>
+	</body>
+</html>

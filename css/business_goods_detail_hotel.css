@@ -1,0 +1,112 @@
+
+/*房型详情*/
+.goods_info_div {
+	width: 100%;
+	background-color: #FFFFFF;
+	/* display: none; */
+}
+
+.goods_info_title > p {
+	font-size: .43rem !important;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #2B2B2B !important;
+}
+
+.goods_info_title>p>span {
+	position: relative;
+	left: 3.6rem;
+}
+
+.goods_info_img img {
+	width: 100%;
+	height: auto;
+}
+
+.goods_info_config {
+	padding-top: 10px;
+	width: 100%;
+	height: auto;
+}
+
+.goods_info_config ul {
+	padding-left: .3rem;
+	overflow: auto;
+}
+
+.goods_info_config li {
+	float: left;
+	width: 49%;
+}
+
+.goods_info_config_title {
+	color: #747474;
+	width: 30%;
+	text-align: right;
+}
+
+.goods_info_config_content {
+	color: #383838;
+	width: 70%;
+	margin-left: .1rem;
+}
+
+.goods_info_config>a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.goods_info_config>a>img{
+	width: .5rem;
+	height: .5rem;
+	top: .14rem;
+	left: -.15rem;
+}
+
+.goods_info_rule{
+	width: 100%;
+	padding-left: .2rem;
+}
+
+.goods_info_rule span {
+	color: #000000;
+	font-size: .5rem;
+}
+
+.goods_info_rule li {
+	color: #727272;
+}
+
+.goods_info_rule li:before {
+	content: "\2022";
+    color: #FFB5AE;
+    font-size: 20px;
+}
+
+.goods_info_rule  li > span {
+	font-size: .3rem !important;
+	color: #DF8167;
+}
+
+.goods_info_submit li {
+	float: left;
+	width: 50%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	font-size: .5rem;
+	background-color: #0C90FF;
+	color: #FFFFFF;
+}
+
+.goods_info_submit {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.goods_info_submit_price {
+	background-color: #FFFFFF !important;
+	color: red !important;
+}

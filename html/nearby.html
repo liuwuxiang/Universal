@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/nearby.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/nearby.css" rel="stylesheet" type="text/css" />
+		<link href="../css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+
+		<script type="text/javascript" src="../js/immersed.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider mui-fullscreen" style="height: 0;"></div>
+		<!-- 头部STR -->
+		<div class="head">
+			<div class="serch" style="width: 55%;margin-left: 22%;">
+				<input type="text" id="search_content" placeholder="搜商家" readonly="readonly">
+				<a class="searchsubmit">搜索</a>
+			</div>
+			<!--<a class="address" id="current_city_name">曲靖市</a>-->
+			<a id="scan_button" class="scan"></a>
+			<a id="message_center" class="message_center"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 滚动图STR -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--data-type=0:跳转到商家主页的轮播图,data-type=1跳转到内容页的轮播图,data-type=2:系统轮播图,当data-type=1时id值为长图链接,当data-type=0时id值为商家id-->
+				<div class="swiper-slide" id="banner1" data-type="2"><img src="../images/banner003.png" /></div>
+				<div class="swiper-slide" id="banner2" data-type="2"><img src="../images/banner004.jpeg" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- 滚动图END -->
+
+		<!-- 商户一级标签STR -->
+		<div class="business_type_div">
+			<ul class="business_type_ul" id="business_type_ul">
+				<!--<li class="li_type sel" id="1">
+			  	<a>测试分类1</a>
+			  	<div></div>
+			</li>
+			<li class="li_type" id="2">
+			  	<a>测试分类1</a>
+			  	<div></div>
+			</li>-->
+			</ul>
+		</div>
+		<!-- 商户一级标签END -->
+
+		<!-- 商户二级标签STR -->
+		<div class="business_type_div business_two_tag_div" id="business_two_tag_div">
+			<ul class="business_type_ul business_two_type_ul" id="business_two_tag_ul">
+				<!--<li class="two_li_type sel" id="1">
+			  	<a>测试分类1</a>
+			</li>
+			<li class="two_li_type" id="2">
+			  	<a>测试分类1</a>
+			</li>-->
+			</ul>
+		</div>
+		<!-- 商户二级标签END -->
+
+		<!-- 热门推荐 -->
+		<div class="hotlist">
+			<ul id="business_list_ul">
+				<!--<li id="business_detail.html" onclick="clicked(this.id)">
+  					<div class="li_left_div">
+  						<img src="../images/banner.jpg"/>
+  						<a>营业时间</a>
+  						<a>店铺状态</a>
+  					</div>
+  					<div class="li_right_div">
+  						<a>春禾寿司(西菀店)</a>
+  						<a>1.3km</a>
+  						<a><span>惠</span>Lorem ipsum dolor sit amet, consectetur</a>
+  						<a>￥39<span>会员价:￥9.9起</span></a>
+  						<a>已售0</a>
+  						<div class="li_bottom_div">
+  							<a>儿童观影 巨幕厅 4D厅</a>
+  							<a>免费停车 免费WIFI</a>
+  						</div>
+  						<img src="../images/VIP.png" class="vip_icon"/>
+  					</div>
+  				</li>-->
+			</ul>
+		</div>
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无数据</p>
+		</div>
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<!--地理位置坐标系转换-->
+		<script src="../js/gps.js"></script>
+		<script src="../js/home.js"></script>
+		<!-- 下拉刷新jsSTR -->
+		<script src="../js/weui/jquery-2.1.4.js"></script>
+		<script src="../js/weui/jquery-weui.js"></script>
+		<!-- 下拉刷新jsEND -->
+		<script src="../js/weui/fastclick.js"></script>
+		<script src="../js/weui/swiper.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/home.css" rel="stylesheet" type="text/css" />
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+
+		<script type="text/javascript" src="../js/immersed.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider mui-fullscreen" style="height: 0;"></div>
+		<!-- 头部STR -->
+		<div class="head">
+			<div class="serch" style="width: 55%;margin-left: 22%;">
+				<input type="text" id="search_content" placeholder="搜商家" readonly="readonly">
+				<a class="searchsubmit">搜索</a>
+			</div>
+			<!--<a class="address" id="current_city_name">曲靖市</a>-->
+			<a id="scan_button" class="scan"></a>
+			<!--<a id="message_center" class="msg" href="#topPopover"></a> <!-- sel表示有消息  -->
+			<a id="message_center" class="message_center"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!--轮播图STR-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--data-type=0:跳转到商家主页的轮播图,data-type=1跳转到内容页的轮播图,data-type=2:系统轮播图,当data-type=1时id值为长图链接,当data-type=0时id值为商家id-->
+				<div class="swiper-slide" id="banner1" data-type="2"><img src="../images/banner003.png" /></div>
+				<div class="swiper-slide" id="banner2" data-type="2"><img src="../images/banner004.jpeg" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--轮播图END-->
+		<!-- 入口STR -->
+		<p class="member_tehui_tag">会员特惠专区</p>
+		<div class="indexmenulist" id="indexmenulist" style="margin-top: 0px;padding-top: 5px;">
+			<!--<a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费观影</a>
+	    <a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费理发</a>
+	    <a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费健身</a>
+	    <a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费洗车</a>-->
+		</div>
+		<!-- 入口END -->
+		<!-- 入口STR -->
+		<div class="indexmenulist" id="business_tag_li" style="border-top: solid 1px #DCDCDC;">
+			<!--<a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费观影</a>
+	    <a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费理发</a>
+	    <a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费健身</a>
+	    <a id="business_list.html" onclick="clicked(this.id)" class="item"><span class="img"><img src="../images/logo.jpg" alt=""></span>免费洗车</a>-->
+		</div>
+		<!-- 入口END -->
+		<div class="recommend_div">
+			<ul class="recommend_business_ul" id="recommend_business_ul">
+				<!--<li>
+	  	 		<img src="../images/banner.jpg"/>
+	  	 		<a class="business_name">商户名称</a>
+	  	 		<a class="business_type">洗车(商户分类)</a>
+	  	 	</li>
+	  	 	<li>
+	  	 		<img src="../images/banner.jpg"/>
+	  	 		<a class="business_name">商户名称</a>
+	  	 		<a class="business_type">洗车(商户分类)</a>
+	  	 	</li>
+	  	 	<li>
+	  	 		<img src="../images/banner.jpg"/>
+	  	 		<a class="business_name">商户名称</a>
+	  	 		<a class="business_type">洗车(商户分类)</a>
+	  	 	</li>
+	  	 	<li>
+	  	 		<img src="../images/banner.jpg"/>
+	  	 		<a class="business_name">商户名称</a>
+	  	 		<a class="business_type">洗车(商户分类)</a>
+	  	 	</li>-->
+			</ul>
+			<div class="wnk_open_card_button_div" id="wnk_open_card_button_div">
+				<a class="wnk_open_card_button" id="wnk_open_card_button">万能卡</a>
+			</div>
+
+		</div>
+		<!-- 热门推荐 -->
+		<div class="hotlist" style="margin-top: 10px;">
+			<ul id="nearby_business_ul">
+				<!--<li id="business_detail.html" onclick="clicked(this.id)">
+					<div class="li_left_div">
+						<img src="../images/img_goods.jpg" />
+						<a>营业时间</a>
+						<a>店铺状态</a>
+					</div>
+					<div class="li_right_div">
+						<a>春禾寿司(西菀店)</a>
+						<a>1.3km</a>
+						<a>[区域]<span><span>送</span>消费即赠<span>5%</span></span>
+						</a>
+						<a><span>惠</span>Lorem ipsum dolor sit amet, consectetur</a>
+						<a><span>￥39</span><span>会员价:￥9.9起</span></a>
+						<a>已售0</a>
+						<div class="li_bottom_div">
+							<div class="tese_div">
+								<div>
+									<p>儿童观影 </p>
+									<p>巨幕厅</p>
+									<p>巨幕厅</p>
+								</div>
+								<div>
+									<p>免费停车</p>
+									<p>免费WIFI</p>
+								</div>
+							</div>
+							<img src="../images/VIP.png" class="vip_icon" />
+						</div>
+					</div>
+				</li>-->
+			</ul>
+		</div>
+		<!--</div>-->
+
+		<!--右上角弹出菜单-->
+		<!--<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell" id="../html/message_center.html"><a>消息</a>
+						</li>
+						<li class="mui-table-view-cell" id="../html/barcode.html"><a>扫一扫</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>-->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../js/toast.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

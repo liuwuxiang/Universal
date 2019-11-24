@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单详情</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/my_oder_detail_two.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/my_oder_detail_two.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>订单详情</h1>
+		    <a class="back" onclick="back()"></a>
+		    <a class="submit" id="make_record">使用记录</a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		  <div class="qrcode_div" id="qrcode_div">
+	  			<a>使用时出示此二维码</a>
+	  			<img src="" id="qr_code_img"/>
+	  			<img src="../images/failure.png" id="make_img"/>
+	  		</div>
+		  <div class="top_div">
+			<div class="top_business_div">
+				<a id="business_name">万达国际影城(奥体店)</a>
+				<!--<img src="../images/icon/icon_more.svg"/>-->
+			</div>
+			
+			<div class="li_commodites_div" id="li_commodites_div">
+	  			<a class="commodities_number_tag" id="commodity_number_tag">商品(0)</a>
+	  			<ul class="commodities_ul" id="commodities_ul">
+	  				<!--<li>
+	  					<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+	  					<a class="commodity_number_tag">x1</a>
+	  					<a class="price_tag">35.00</a>
+	  				</li>
+	  				<li>
+	  					<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+	  					<a class="commodity_number_tag">x1</a>
+	  					<a class="price_tag">35.00</a>
+	  				</li>-->
+	  			</ul>
+	  			<ul class="commodities_ul" id="pay_amount_ul">
+	  				<li id="order_price_li">
+	  					<a class="commodity_name_tag">商品总价</a>
+	  					<a class="price_tag" id="order_price">￥0.00</a>
+	  				</li>
+	  				<li id="general_integral_li">
+	  					<a class="commodity_name_tag">通用积分</a>
+	  					<a class="price_tag" id="general_integral">-0.00</a>
+	  				</li>
+	  				<li id="send_integral_li">
+	  					<a class="commodity_name_tag">商家代金券</a>
+	  					<a class="price_tag" id="send_integral">-0.00</a>
+	  				</li>
+	  				<li id="coupon_li">
+	  					<a class="commodity_name_tag">优惠券</a>
+	  					<a class="price_tag" id="coupon">-0张</a>
+	  				</li>
+	  			</ul>
+	  			<hr />
+	  			<div class="actual_payment_div">
+	  				<a>实付款</a>
+	  				<a id="sj_pay_amount">￥0.0</a>
+	  			</div>
+	  		</div>
+		</div>
+		
+		<div class="order_information_div">
+	  		<a id="order_no_tag">订单号：</a>
+	  		<a id="line_order_date">下单时间：</a>
+	  		<a id="pay_date">付款时间：</a>
+	  		<a id="pay_way">支付方式：</a>
+	  	</div>
+	  	
+	  	<!-- 表单STR -->
+		<div class="pubform">
+		    <div class="fhandle">
+		    	   <a class="fsubmit" id="refund_record">退款记录</a>
+		       <a class="fsubmit" id="apply_refund">申请退款</a>
+		    </div>
+		</div>
+
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>消息中心</title>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<link href="../css/message_center.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/message_center.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>消息中心</h1>
+			<a class="back" onclick="back()"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- Tab菜单 STR -->
+		<div class="pubtabmenu" id="pubtabmenu">
+			<div class="wrap">
+				<a class="item sel" onclick="listOptionInit(0)" id="system_message_item">系统消息<span id="system_no_read"></span></a>
+				<a class="item" onclick="listOptionInit(1)" id="promotion_activities">推广活动<span id="promotion_no_read"></span></a>
+			</div>
+		</div>
+		<!-- Tab菜单 END -->
+
+		<!-- 明细STR -->
+		<div class="condetaile">
+			<ul class="system_message_list" id="system_message_ul">
+				<!--<li class="read_li">
+		      	<a class="system_message_title">银币收益提醒</a>
+		      	<a class="system_message_content">您的团队13390517636兑换银币6个，您获得6个银币奖励</a>
+		      	<a class="system_message_time">2017-09-10 16:30:20</a>
+		      </li>
+		      <li>
+		      	<a class="system_message_title">银币收益提醒</a>
+		      	<a class="system_message_content">您的团队13390517636兑换银币6个，您获得6个银币奖励</a>
+		      	<a class="system_message_time">2017-09-10 16:30:20</a>
+		      </li>-->
+			</ul>
+			<!--<ul class="system_message_list" id="my_message_ul">
+		      <li>
+		      	<a class="system_message_title">测试消息</a>
+		      	<a class="system_message_content">测试消息测试消息测试消息，用于测试</a>
+		      	<a class="system_message_time">2017-09-10 16:30:20</a>
+		      </li>
+		    </ul>-->
+		</div>
+		<!-- 明细END -->
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无消息</p>
+		</div>
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+		</script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>

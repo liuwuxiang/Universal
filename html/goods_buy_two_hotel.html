@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>提交订单-酒店类商家</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/goods_buy_two.css" />
+		<link rel="stylesheet" type="text/css" href="../css/hui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../plus/css/jquery-weui.css">
+		<link rel="stylesheet" type="text/css" href="../css/goods_buy_two_hotel.css">
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<!-- 头部STR -->
+			<div class="head">
+				<h1>闲情TIME艺术主题酒店</h1>
+				<a class="back" onclick="back()"></a>
+			</div>
+			<div class="h88"></div>
+			<!-- 头部END -->
+			<div class="order_title">
+
+				<div class="order_title_str">
+					<p><!-- 1月16日(周三)-1月18日(周五)共2晚 --></p>
+					<p><!-- 精品大床房:大床·不含早·有窗 --></p>
+					<div id="goods_info_btn">房型详情></div>
+				</div>
+
+				<div class="order_title_tip">
+					<div id="cancel_type_1" style="color: #33807E; display: none;">
+						<img src="../images/success.png" alt="">
+						<span>放心订!&nbsp;&nbsp;1月16日12点前免费取消!</span>
+					</div>
+
+					<div id="cancel_type_2" style="color: #FDA430; display: none;">
+						<img src="../images/warning.png" alt="">
+						<span>不可取消,现已过取消时间</span>
+					</div>
+
+					<div id="cancel_type_3" style="color: #D71E06; display: none;">
+						<img src="../images/error.png" alt="">
+						<span>不可取消,该房间预定后不可取消</span>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--房间选择和入住信息-->
+			<div class="room_number">
+				<!--选择提示-->
+				<div>
+					<ul>
+						<li style="width: 30%;">房间数</li>
+						<li id="room_number" style="width: 50%;">1间</li>
+						<li style="width: 20%;text-align: right;"><img id="room_number_icon" src="../images/arrow_up.png" alt=""></li>
+					</ul>
+				</div>
+				<!--房间数量选择-->
+				<div class="room_select_div">
+					<ul  class="room_number_select">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+				</div>
+				<!--入住信息-->
+				<div class="mui-input-group">
+					<!--入住人列表-->
+					<div id="checkInPeople">
+						<div class="mui-input-row">
+							<label>入&nbsp;&nbsp;住&nbsp;人</label>
+							<input type="text" class="mui-input-clear" placeholder="每间填一位入住人姓名">
+						</div>
+					</div>
+
+					<div class="mui-input-row">
+						<label>联系手机</label>
+						<input id="register_tel" type="number" class="mui-input-clear" placeholder="用于接受短信通知">
+					</div>
+					<div class="mui-input-row">
+						<label>预计到店</label>
+						<input id="register_time" type="text" class="mui-input-clear" readonly="readonly">
+					</div>
+				</div>
+			</div>
+
+			<!--发票信息-->
+			<div class="block-info">
+				<div class="invoice_div">
+					<ul>
+						<li class="invoice">发票</li>
+						<li>如需发票,请先与酒店确认可开</li>
+						<li class="invoice_tel"><img src="../images/tel.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 房费信息 -->
+			<div class="top_div">
+				<a class="commodities_number_tag">房费</a>
+			</div>
+			<ul class="commodities_ul fee" id="goodsTotalPriceLi">
+				<!--<li>
+					<span class="fee-title">2019-01-16不含早</span>
+					<span class="fee-price">2 × ￥159.00</span>
+				</li>
+				<li>
+					<span class="fee-title">2019-01-17不含早</span>
+					<span class="fee-price">2 × ￥159.00</span>
+				</li>
+				<p>总价:<span>￥636.00元</span></p>-->
+			</ul>
+
+			<!-- 支付信息 -->
+			<div class="top_div pay_way_div">
+				<a class="commodities_number_tag">支付方式</a>
+			</div>
+			<div class="integral_div">
+				<img src="../images/general_integral.png" />
+				<a class="integral_type">通用积分<span>可用积分:</span><span class="integral_balance" id="general_integral_balance">0</span></a>
+				<input class="weui-switch" type="checkbox" onchange="integral_make_swith(0)">
+				<div class="integral_number_div" id="gengeral_integral_div">
+					<a>使用</a>
+					<input type="number" id="general_integral_pay_amount" value="0" disabled="disabled" />
+					<a>通用积分,抵<span id="general_integral_deduction_amount">0</span>元</a>
+				</div>
+			</div>
+			<div class="integral_div">
+				<img src="../images/send_integral.png" />
+				<a class="integral_type">商家现金劵<span>可用:</span><span class="integral_balance" id="cash_coupon_balance">0</span></a>
+				<input class="weui-switch" type="checkbox" onchange="integral_make_swith(1)">
+				<div class="integral_number_div" id="cash_coupon_div">
+					<a>使用</a>
+					<input type="number" id="cash_coupon_pay_number" value="0" disabled="disabled" />
+					<a>现金劵,抵<span id="cash_coupon_deduction_amount">0</span>元</a>
+				</div>
+			</div>
+			<div class="integral_div">
+				<img src="../images/icon/coupons.svg" />
+				<a class="integral_type">优惠券<span>剩余:</span><span class="integral_balance" id="coupon_balance">0</span></a>
+				<input class="weui-switch" type="checkbox" onchange="integral_make_swith(2)">
+				<div class="integral_number_div" id="coupon_div">
+					<a>使用</a>
+					<input type="number" id="coupon_pay_number" value="0" disabled="disabled" />
+					<a>张优惠券,抵<span id="coupon_deduction_amount">0</span>元</a>
+				</div>
+			</div>
+			<div class="pubform">
+				<div class="wx_pay_div" id="wx_pay_div" onclick="pay_choose(0)">
+					<img src="../images/icon/icon_pay_wx.svg" class="pay_icon" />
+					<a class="pay_type">微信支付</a>
+					<div class="pay_amount_div">
+						<img src="../images/choose.svg" id="wx_pay" />
+						<a class="pay_amount" id="pay_amount">￥0元</a>
+					</div>
+				</div>
+				<div class="pay-tip-div">
+					<ul>
+						<li>退款规则</li>
+						<li id="pay_tip_div_contont">订单支付后,X月X日X时前可免费取消,逾期不可取消/变更;如未入住,酒店将扣除全额房费;房间整晚保留,请及时入住</li>
+					</ul>
+				</div>
+				<div class="fhandle">
+					<a class="fsubmit" id="submit_pay">支付</a>
+				</div>
+			</div>
+
+
+
+			<!-- 商品简介信息弹窗 -->
+			<div id="goods_popUp_info" class="goods_info_div">
+				<div class="goods_info_title">
+					<span>精品大床房</span>
+				</div>
+				<!-- 轮播图 -->
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../images/jinka_background.png" /></a></div>
+						<div class="mui-slider-item"><a href="#"><img src="../images/jinka_background.png" /></a></div>
+						<div class="mui-slider-item"><a href="#"><img src="../images/jinka_background.png" /></a></div>
+						<div class="mui-slider-item"><a href="#"><img src="../images/jinka_background.png" /></a></div>
+						<div class="mui-slider-item"><a href="#"><img src="../images/jinka_background.png" /></a></div>
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../images/jinka_background.png" /></a></div>
+					</div>
+				</div>
+				<!-- 房间设施 -->
+				<div class="goods_info_facility">
+					<ul id="facilities_ul">
+						<!-- <li>
+							<span>早餐</span>
+							<span class="goods_info_facility_content">无早餐</span>
+						</li>
+						<li>
+							<span>窗户</span>
+							<span class="goods_info_facility_content">有窗</span>
+						</li>
+						<li>
+							<span>可住</span>
+							<span class="goods_info_facility_content">2人</span>
+						</li>
+						<li>
+							<span>宽带</span>
+							<span class="goods_info_facility_content">免费WIFI和宽带</span>
+						</li>
+						<li>
+							<span>卫浴</span>
+							<span class="goods_info_facility_content">独立卫浴</span>
+						</li>
+						<li>
+							<span>床型</span>
+							<span class="goods_info_facility_content">大床1.8米×2.0米1张</span>
+						</li> -->
+					</ul>
+					<a href="javascript:void(0);">查看更多房型设施 <img src="../images/arrow_under.png" ></a>
+				</div>
+				<!-- 使用规则 -->
+				<div class="goods_info_rule">
+					<p>使用规则</p>
+					<ul>
+						<li>直接消费,无需使用美团券,携带所有入住人的有效身份证办理入住,入住后必须按照一人一证</li>
+						<li>请在<span>14:00</span>之后入住并于次日<span>14:00</span>之前退房,如需提前入住或延时退房,请咨询商家</li>
+						<li>入住需要押金,金额以前台为准</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<!-- 入住时间弹窗 -->
+			<div class="register_time">
+				<div class="register_time_tip">
+					<p class="register_time_tip_title">预计到店</p>
+					<p>房间整晚保留,14:00前到店可能需要等房</p>
+				</div>
+				<div>
+					<ul id="registerTimeUl">
+						<!-- <li>16:00</li>
+						<li>17:00</li>
+						<li>18:00</li>
+						<li>19:00</li>
+						<li>20:00</li>
+						<li>21:00</li>
+						<li>22:00</li>
+						<li>23:00</li>
+						<li>次日00:00</li>
+						<li>次日01:00</li>
+						<li>次日02:00</li>
+						<li>次日03:00</li>
+						<li>次日04:00</li>
+						<li>次日05:00</li>
+						<li>次日06:00</li> -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../js/common-mui.js"></script>
+		<script type="text/javascript" src="../js/mui.js"></script>
+		<script type="text/javascript" src="../js/two_page_back.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/join_login_page.js"></script>
+		<script type="text/javascript" src="../js/hui.js"></script>
+		<script type="text/javascript" src="../plus/lib/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="../plus/lib/fastclick.js"></script>
+		<script type="text/javascript" src="../js/toast.js"></script>
+		<script type="text/javascript" src="../plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../js/navigator.js"></script>
+		<script type="text/javascript" src="../js/api.js"></script>
+		<script type="text/javascript" src="../js/goods_buy_two_hotel.js"></script>
+	</body>
+
+</html>

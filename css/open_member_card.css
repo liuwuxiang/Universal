@@ -1,0 +1,38 @@
+.user_xieyi_div{
+	width: auto;
+	height: 35px;
+	text-align: center;
+	overflow: hidden;
+	display: none;
+}
+
+.user_xieyi_div img{
+	width: auto;
+	line-height: 20px;
+	display: block;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-top: 7px;
+}
+
+.xieyi_tag{
+	display: block;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	margin-left: 3px;
+	font-size: 13px;
+}
+
+.xieyi_content_button{
+	display: block;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 13px;
+	float: left;
+	color: blue;
+	text-decoration: underline;
+}

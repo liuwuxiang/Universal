@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>积分兑换</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/integral_exchange.js"></script>
+  		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		  <script src="../js/hui.js"></script>
+		
+	</head>
+	<body>
+		<!-- 头部STR -->
+		  <div class="head">
+		    <h1>积分兑换</h1>
+		    <a class="back" onclick="back()"></a>
+		  </div>
+		  <div class="h88"></div>
+		  <!-- 头部END -->
+		  
+		  <!-- 表单STR -->
+		  <div class="pubform" style="margin-top: 10px;">
+		    <form>
+		      <div class="ftitle">积分兑换(<span id="top_tip">10个积分=1个银币</span>)</div>
+		      <div class="fgroup">
+		        <label class="fitem"  style="height: 40px;">
+		          <span class="fname"  style="height: 40px;line-height: 40px;">银币</span>
+		          <input class="fselect" type="text" id="exchange_number" placeholder="请选择兑换银币的个数" style="height: 40px;">
+		        </label>
+		        <div class="jfbar">需消耗<span id="integral_number">0</span>个积分</div>
+		      </div>
+		      <div class="fhandle">
+		        <a class="fsubmit" onclick="exchangeAction()">兑换</a>
+		      </div>
+		    </form>
+		  </div>
+		  <!-- 表单END -->
+		  
+		  <!-- UI插件 -->
+		  <link rel="stylesheet" href="../plus/lib/weui.min.css">
+		  <link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		  <script src="../plus/lib/jquery-2.1.4.js"></script>
+		  <script src="../plus/lib/fastclick.js"></script>
+		  <script src="../js/toast.js"></script>
+		  <script>
+		      $(function() {
+		          FastClick.attach(document.body);
+		      });
+		  </script>
+		  <script src="../plus/js/jquery-weui.js"></script>
+		  <script src="../plus/js/city-picker.js"></script>
+		  <script src="../js/navigator.js"></script>
+		  <script src="../js/api.js"></script>
+		  <script>
+		      $("#exchange_number").picker({
+		          title: "请选择兑换银币的个数",
+		          cols: [
+		              {
+		                  textAlign: 'center',
+		                  values: ['20', '50']
+		              }
+		          ],
+		          onChange: function(p, v, dv) {
+		              console.log(p, v, dv);
+		              inputChange(v);
+		          },
+		          onClose: function(p, v, d) {
+		              console.log("close");
+		          }
+		      });
+		  </script>
+	</body>
+</html>

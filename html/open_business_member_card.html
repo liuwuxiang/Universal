@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>会员卡办理</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css" />
+		<script src="../js/common-mui.js"></script>
+		<script src="../js/mui.js"></script>
+		<script src="../js/two_page_back.js"></script>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/join_login_page.js"></script>
+		<script src="../js/open_business_member_card.js"></script>
+		<link href="../css/hui.css" rel="stylesheet" type="text/css" />
+		<script src="../js/hui.js"></script>
+		
+		<link rel="stylesheet" href="../css/card_buy.css" />
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>会员卡办理</h1>
+			<a class="back" onclick="back()"></a>
+			<!--<a href="" class="set"></a>-->
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 表单STR -->
+		<div class="pubform">
+			<form>
+				<div class="ftitle">会员卡信息</div>
+				<div class="fgroup">
+					<label class="fitem">
+						<span class="fname">商家名称</span>
+						<p class="finfo" id="business_name">
+							<!--拳行天下-->
+						</p>
+					</label>
+					<label class="fitem" >
+						<span class="fname">年卡价格</span>
+						<p class="finfo" id="price_annual_card">
+							0元
+						</p>
+					</label>
+					<label class="fitem">
+						<span class="fname">优惠信息</span>
+						<p class="finfo" id="info_discount">万能卡用户<span id="price_discount">39.9</span>元享年卡特权
+							<a href="javascript:;" class="to_open" id="no_wnk">去开通</a>
+						</p>
+					</label>
+					<label class="fitem">
+						<span class="fname">支付金额</span>
+						<p class="finfo">需支付<span id="pay_amount">0</span>元</p>
+					</label>
+				</div>
+				<div class="ftitle">支付方式</div>
+				<div class="fgroup">
+					<label class="fradio" style="height: 50px;">
+						<span class="icon" style="background-image: url(../images/general_integral.png);"></span>
+						<span class="fname">通用积分</span>
+						<input type="radio" name="pay" id="general_integral_radio" checked>
+						<span class="status"></span>
+					</label>
+
+					<!--<label class="fradio" style="height: 50px;">
+	                <span class="icon" style="background-image: url(../images/consumption_integral.png);"></span>
+	                <span class="fname">消费积分</span>
+	                <input type="radio" name="pay" id="consumption_integral_radio">
+	                <span class="status"></span>
+	            </label>-->
+
+					<label class="fradio" style="height: 50px;">
+						<span class="icon wxpay"></span>
+						<span class="fname">微信支付</span>
+						<input type="radio" name="pay" id="wx_pay_radio">
+						<span class="status"></span>
+					</label>
+				</div>
+				<div class="fhandle">
+					<a class="fsubmit" style="margin-top: 10px;">支付</a>
+				</div>
+				<a class="direction_card" id="direction_card" href="javascript:void(0);">会员卡办理和使用说明</a>
+			</form>
+		</div>
+		<!-- 表单END -->
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../plus/css/jquery-weui.css">
+		<script src="../plus/lib/jquery-2.1.4.js"></script>
+		<script src="../plus/lib/fastclick.js"></script>
+		<script src="../js/toast.js"></script>
+		<script src="../plus/js/jquery-weui.js"></script>
+		<script src="../js/navigator.js"></script>
+		<script src="../js/api.js"></script>
+	</body>
+
+</html>
